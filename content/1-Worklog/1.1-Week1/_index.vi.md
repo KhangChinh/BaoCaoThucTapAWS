@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-05-04
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm rõ các nội quy, quy định liên quan đến AWS và dự án.
+* Khởi tạo tài khoản AWS và thiết lập kiểm soát chi phí (budget).
+* Xây dựng đội nhóm, kết nối các thành viên và thống nhất quy trình làm việc.
+* Tham gia sự kiện khởi động và định hình ý tưởng ban đầu cho dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 3 | - Tìm hiểu các nội quy liên quan đến AWS | 05/05/2026 | 05/05/2026 | <https://rules.fcjuni.com> |
+| 4 | - Tìm hiểu và tạo tài khoản AWS <br> - Setup budget cho tài khoản | 06/05/2026 | 06/05/2026 | [AWS Cost Management](https://us-east-1.console.aws.amazon.com/costmanagement/home?region=us-east-1#/dashboards) |
+| 5 | - Liên hệ và tạo nhóm <br> - Làm quen với từng thành viên trong nhóm | 07/05/2026 | 07/05/2026 | |
+| 6 | - Xem quy định về dự án <br> - Bàn bạc cách vận hành cơ bản của nhóm | 08/05/2026 | 08/05/2026 | <https://rules.fcjuni.com/3-project/> |
+| 7 | - Tham gia event lần 1 <br> - Lên ý tưởng cho dự án | 09/05/2026 | 09/05/2026 | |
 
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Đã đọc hiểu và nắm vững các nội quy khi sử dụng AWS cũng như quy định dành cho dự án.
+* Tạo thành công tài khoản AWS và đã cài đặt cảnh báo ngân sách (budget) để quản lý chi phí hiệu quả.
+* Thành lập nhóm thành công, các thành viên đã làm quen với nhau và chốt được cách vận hành, làm việc chung cơ bản.
+* Đã tham gia đầy đủ event lần 1 và thảo luận xong các ý tưởng sơ bộ cho dự án sắp tới.
