@@ -22,7 +22,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![Your profile picture](../images/avatar.jpg)
+![Your profile picture](https://res.cloudinary.com/dqblg6ont/image/upload/v1778399184/avatar_uyogic.jpg)
 
 ### Report Content
 
