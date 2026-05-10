@@ -4,7 +4,6 @@ date: 2024-01-01
 weight: 1
 chapter: false
 ---
-
 # Báo cáo thực tập
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Lý Khang Chính
@@ -23,7 +22,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 04/05/2026 đến ngày 04/08/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Ảnh đại diện của bạn](/images/avatar.jpg)
 
 
 
