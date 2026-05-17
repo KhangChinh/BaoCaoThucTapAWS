@@ -16,7 +16,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 1:** [Understanding regulations, creating an AWS account, and team building](1.1-week1/)
 
-**Week 2:** [To be updated...](1.2-week2/)
+**Week 2:** [Team syncing, learning AWS Cognito, and React integration](1.2-week2/)
 
 **Week 3:** [To be updated...](1.3-week3/)
 

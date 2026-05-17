@@ -16,7 +16,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 1:** [Tìm hiểu nội quy, khởi tạo tài khoản AWS và xây dựng nhóm](1.1-week1/)
 
-**Tuần 2:** [Đang cập nhật...](1.2-week2/)
+**Tuần 2:** [Đồng bộ nhóm, học AWS Cognito và tích hợp vào React](1.2-week2/)
 
 **Tuần 3:** [Đang cập nhật...](1.3-week3/)
 
