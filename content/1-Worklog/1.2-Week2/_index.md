@@ -15,8 +15,8 @@ pre: " <b> 1.2. </b> "
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | 2 | - Communicate with team members <br> - Analyze project requirements and difficulties | 05/11/2026 | 05/11/2026 | |
-| 4 | - Learn AWS Cognito theory | 05/13/2026 | 05/13/2026 | [AWS Cognito Documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
-| 6 | - Practice integrating AWS Cognito into React | 05/15/2026 | 05/15/2026 | |
+| 4 | - Learn AWS Cognito theory | 05/13/2026 | 05/13/2026 | [AWS Cognito Documentation](https://docs.aws.amazon.com/cognito/) |
+| 6 | - Practice integrating AWS Cognito into React | 05/15/2026 | 05/15/2026 | [AWS Cognito with React guide](https://www.youtube.com/watch?v=S1X5QxBoX4M) |
 
 
 ### Week 2 Achievements:

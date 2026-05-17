@@ -15,8 +15,8 @@ pre: " <b> 1.2. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | 2 | - Giao tiếp với các thành viên trong nhóm <br> - Phân tích yêu cầu và các khó khăn của dự án | 11/05/2026 | 11/05/2026 | |
-| 4 | - Học lý thuyết về AWS Cognito | 13/05/2026 | 13/05/2026 | [AWS Cognito Documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
-| 6 | - Thực hành tích hợp AWS Cognito vào React | 15/05/2026 | 15/05/2026 | |
+| 4 | - Học lý thuyết về AWS Cognito | 13/05/2026 | 13/05/2026 | [AWS Cognito Documentation](https://docs.aws.amazon.com/cognito/) |
+| 6 | - Thực hành tích hợp AWS Cognito vào React | 15/05/2026 | 15/05/2026 | [Tích hợp AWS Cognito vào React](https://www.youtube.com/watch?v=S1X5QxBoX4M) |
 
 
 ### Kết quả đạt được tuần 2:
