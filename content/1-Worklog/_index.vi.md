@@ -18,7 +18,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 2:** [Đồng bộ nhóm, học AWS Cognito và tích hợp vào React](1.2-week2/)
 
-**Tuần 3:** [Đang cập nhật...](1.3-week3/)
+**Tuần 3:** [Khởi tạo dự án, chốt UI/Use case và cấu hình Cognito UserPool](1.3-week3/)
 
 **Tuần 4:** [Đang cập nhật...](1.4-week4/)
 

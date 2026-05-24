@@ -18,7 +18,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 2:** [Team syncing, learning AWS Cognito, and React integration](1.2-week2/)
 
-**Week 3:** [To be updated...](1.3-week3/)
+**Week 3:** [Project initialization, UI/Use case finalization, and Cognito UserPool setup](1.3-week3/)
 
 **Week 4:** [To be updated...](1.4-week4/)
 
