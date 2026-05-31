@@ -20,7 +20,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 3:** [Project initialization, UI/Use case finalization, and Cognito UserPool setup](1.3-week3/)
 
-**Week 4:** [To be updated...](1.4-week4/)
+**Week 4:** [Perfecting authentication, learning Serverless, and planning backend migration](1.4-week4/)
 
 **Week 5:** [To be updated...](1.5-week5/)
 

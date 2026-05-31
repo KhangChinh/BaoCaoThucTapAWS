@@ -20,7 +20,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 3:** [Khởi tạo dự án, chốt UI/Use case và cấu hình Cognito UserPool](1.3-week3/)
 
-**Tuần 4:** [Đang cập nhật...](1.4-week4/)
+**Tuần 4:** [Hoàn thiện xác thực, tìm hiểu Serverless và lên plan chuyển backend lên AWS](1.4-week4/)
 
 **Tuần 5:** [Đang cập nhật...](1.5-week5/)
 
