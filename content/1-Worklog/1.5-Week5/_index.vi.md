@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tối ưu hóa cơ sở dữ liệu để đạt hiệu suất cao và giảm thiểu chi phí truy vấn.
+* Chuyển dịch thành công các luồng logic cốt lõi (tạo tài khoản, khởi tạo DB) lên môi trường Serverless của AWS.
+* Hoàn thiện các module chức năng quản lý phiên làm việc và vật phẩm trong ứng dụng.
+* Nắm bắt cách lưu trữ và quản lý tệp tĩnh tĩnh (ảnh đại diện) một cách an toàn với AWS S3.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Điều chỉnh database thông qua DBeaver để tối ưu chi phí query | 01/06/2026 | 01/06/2026 | |
+| 3 | - Chuyển logic tạo tài khoản lên AWS | 02/06/2026 | 02/06/2026 | |
+| 4 | - Thiết lập tự động theo dõi tài khoản người dùng để khởi tạo DB | 03/06/2026 | 03/06/2026 | |
+| 5 | - Viết logic quản lý phiên, quản lý vật phẩm trên VS Code với extension Windsurf | 04/06/2026 | 04/06/2026 | |
+| 6 | - Tìm hiểu AWS S3 để quản lý ảnh đại diện | 05/06/2026 | 05/06/2026 | [AWS S3 Documentation](https://aws.amazon.com/s3/) |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Cơ sở dữ liệu được tinh chỉnh hợp lý, tối ưu hóa được các câu lệnh truy vấn và tiết kiệm chi phí hiệu quả.
+* Luồng tạo tài khoản và tự động khởi tạo cơ sở dữ liệu riêng cho người dùng mới đã hoạt động trơn tru trên kiến trúc AWS.
+* Hoàn tất việc lập trình các logic xử lý phiên đăng nhập và quản lý vật phẩm trong dự án.
+* Hiểu rõ cơ chế của bucket trong AWS S3, các phương thức bảo mật tệp tin và chuẩn bị sẵn sàng cho tính năng tải lên ảnh đại diện của người dùng.

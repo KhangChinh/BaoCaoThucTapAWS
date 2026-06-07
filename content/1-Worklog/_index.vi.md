@@ -22,7 +22,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 4:** [Hoàn thiện xác thực, tìm hiểu Serverless và lên plan chuyển backend lên AWS](1.4-week4/)
 
-**Tuần 5:** [Đang cập nhật...](1.5-week5/)
+**Tuần 5:** [Tối ưu DB, chuyển logic lên AWS Serverless và tìm hiểu AWS S3](1.5-week5/)
 
 **Tuần 6:** [Đang cập nhật...](1.6-week6/)
 

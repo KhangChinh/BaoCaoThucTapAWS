@@ -22,7 +22,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 4:** [Perfecting authentication, learning Serverless, and planning backend migration](1.4-week4/)
 
-**Week 5:** [To be updated...](1.5-week5/)
+**Week 5:** [DB optimization, migrating logic to AWS Serverless, and learning AWS S3](1.5-week5/)
 
 **Week 6:** [To be updated...](1.6-week6/)
 
