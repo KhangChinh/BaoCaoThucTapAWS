@@ -24,7 +24,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 5:** [DB optimization, migrating logic to AWS Serverless, and learning AWS S3](1.5-week5/)
 
-**Week 6:** [To be updated...](1.6-week6/)
+**Week 6:** [Standardizing business flows, schema optimization, and learning AWS EventBridge](1.6-week6/)
 
 **Week 7:** [To be updated...](1.7-week7/)
 

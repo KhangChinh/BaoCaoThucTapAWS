@@ -24,7 +24,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 5:** [Tối ưu DB, chuyển logic lên AWS Serverless và tìm hiểu AWS S3](1.5-week5/)
 
-**Tuần 6:** [Đang cập nhật...](1.6-week6/)
+**Tuần 6:** [Chuẩn hóa luồng nghiệp vụ, tối ưu hóa database schema và tìm hiểu AWS EventBridge](1.6-week6/)
 
 **Tuần 7:** [Đang cập nhật...](1.7-week7/)
 
