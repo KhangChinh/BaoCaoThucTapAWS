@@ -26,7 +26,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 6:** [Standardizing business flows, schema optimization, and learning AWS EventBridge](1.6-week6/)
 
-**Week 7:** [To be updated...](1.7-week7/)
+**Tuần 7:** [Tính năng kết bạn, S3/Lambda trigger, OpenSearch và CloudFormation](1.7-week7/)
 
 **Week 8:** [To be updated...](1.8-week8/)
 

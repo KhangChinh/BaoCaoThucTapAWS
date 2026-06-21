@@ -1,59 +1,32 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+date: 2026-06-15
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Phát triển tính năng tương tác xã hội cốt lõi: hệ thống kết bạn giữa các người dùng.
+* Tự động hóa luồng làm mới (refresh) nhiệm vụ hàng ngày thông qua AWS Lambda trigger.
+* Xây dựng công cụ tìm kiếm người dùng tốc độ cao bằng cách tích hợp AWS OpenSearch với DynamoDB.
+* Chuẩn hóa việc quản lý hạ tầng (Infrastructure as Code) cho dự án Serverless Node.js bằng CloudFormation.
+* Tối ưu hóa pipeline nhập liệu vật phẩm tự động từ AWS S3 vào DynamoDB.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Viết logic kết bạn giữa 2 người dùng (xử lý dữ liệu trên social table) | 15/06/2026 | 15/06/2026 | |
+| 3 | - Viết logic chức năng tự động refresh nhiệm vụ ngày qua trigger Lambda | 16/06/2026 | 16/06/2026 | [AWS Lambda Triggers](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html) |
+| 4 | - Ứng dụng AWS OpenSearch kết nối với DynamoDB để quản lý chức năng tìm kiếm người dùng | 17/06/2026 | 17/06/2026 | [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) |
+| 5 | - Tìm hiểu và sử dụng CloudFormation cấu hình cho dự án serverless | 18/06/2026 | 18/06/2026 | [AWS CloudFormation](https://aws.amazon.com/cloudformation/) |
+| 6 | - Viết event trigger cho S3 (assets bucket) để upload dữ liệu vật phẩm lên DynamoDB tự động | 19/06/2026 | 19/06/2026 | |
 
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành API kết bạn, cho phép người dùng gửi yêu cầu và thiết lập mối quan hệ thành công.
+* Chức năng làm mới quest hàng ngày hoạt động chính xác dựa trên lịch trình kích hoạt của Lambda, đảm bảo trải nghiệm liên tục cho người dùng.
+* Cấu hình thành công OpenSearch endpoint đồng bộ dữ liệu từ user table của DynamoDB, mang lại khả năng tìm kiếm người dùng linh hoạt và nhanh chóng hơn.
+* Chuyển đổi thành công việc khai báo tài nguyên (hàm Lambda, quyền truy cập, biến môi trường) sang template của CloudFormation, giúp việc deploy dự án trở nên tự động và dễ kiểm soát.
+* Xây dựng thành công luồng S3 trigger: mỗi khi có file dữ liệu vật phẩm mới được đẩy lên bucket, Lambda sẽ tự động đọc và ghi thông tin vào DynamoDB mà không cần can thiệp thủ công.

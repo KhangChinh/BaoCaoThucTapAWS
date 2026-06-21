@@ -26,7 +26,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 6:** [Chuẩn hóa luồng nghiệp vụ, tối ưu hóa database schema và tìm hiểu AWS EventBridge](1.6-week6/)
 
-**Tuần 7:** [Đang cập nhật...](1.7-week7/)
+**Week 7:** [Friend system, S3/Lambda triggers, OpenSearch, and CloudFormation](1.7-week7/)
 
 **Tuần 8:** [Đang cập nhật...](1.8-week8/)
 
