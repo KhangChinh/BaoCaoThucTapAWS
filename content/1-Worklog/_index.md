@@ -28,7 +28,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Tuần 7:** [Tính năng kết bạn, S3/Lambda trigger, OpenSearch và CloudFormation](1.7-week7/)
 
-**Week 8:** [To be updated...](1.8-week8/)
+**Week 8:** [AWS OpenSearch setup, data sync triggers, and team progress management](1.8-week8/)
 
 **Week 9:** [To be updated...](1.9-week9/)
 

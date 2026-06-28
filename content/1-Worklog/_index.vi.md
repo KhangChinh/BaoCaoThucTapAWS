@@ -28,7 +28,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Week 7:** [Friend system, S3/Lambda triggers, OpenSearch, and CloudFormation](1.7-week7/)
 
-**Tuần 8:** [Đang cập nhật...](1.8-week8/)
+**Tuần 8:** [Cấu hình AWS OpenSearch, trigger đồng bộ dữ liệu và quản lý tiến độ nhóm](1.8-week8/)
 
 **Tuần 9:** [Đang cập nhật...](1.9-week9/)
 
