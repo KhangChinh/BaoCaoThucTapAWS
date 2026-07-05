@@ -30,7 +30,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 8:** [AWS OpenSearch setup, data sync triggers, and team progress management](1.8-week8/)
 
-**Week 9:** [To be updated...](1.9-week9/)
+**Week 9:** [Resolving AWS issues, finalizing Gacha and currency conversion systems](1.9-week9/)
 
 **Week 10:** [To be updated...](1.10-week10/)
 

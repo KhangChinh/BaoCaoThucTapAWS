@@ -30,7 +30,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 8:** [Cấu hình AWS OpenSearch, trigger đồng bộ dữ liệu và quản lý tiến độ nhóm](1.8-week8/)
 
-**Tuần 9:** [Đang cập nhật...](1.9-week9/)
+**Tuần 9:** [Xử lý sự cố AWS, hoàn thiện hệ thống Gacha và quy đổi tiền tệ](1.9-week9/)
 
 **Tuần 10:** [Đang cập nhật...](1.10-week10/)
 
