@@ -32,7 +32,7 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Tuần 9:** [Xử lý sự cố AWS, hoàn thiện hệ thống Gacha và quy đổi tiền tệ](1.9-week9/)
 
-**Tuần 10:** [Đang cập nhật...](1.10-week10/)
+**Week 10:** [EventBridge Shop Reset, Project QA, CloudFront, and Architecture documentation](1.10-week10/)
 
 **Tuần 11:** [Đang cập nhật...](1.11-week11/)
 

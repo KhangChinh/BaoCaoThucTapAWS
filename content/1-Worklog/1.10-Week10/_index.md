@@ -1,57 +1,32 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-07-06
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Finalize the minigame module, ensuring the level generation feature runs smoothly.
+* Automate the in-game shop system using cron jobs on AWS EventBridge.
+* Conduct End-to-End (E2E) testing across the entire system to ensure overall quality.
+* Research the AWS CloudFront content delivery network (CDN) to improve loading speeds and security.
+* Document system flows to serve as a crucial prerequisite for designing the Architecture Diagram.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Support the team in finalizing the level generation function for the minigame | 07/06/2026 | 07/06/2026 | |
+| 3 | - Use AWS EventBridge to create a weekly reset function for the shop | 07/07/2026 | 07/07/2026 | [AWS EventBridge Scheduler](https://aws.amazon.com/eventbridge/scheduler/) |
+| 4 | - Learn about the CloudFront service for upcoming project integration | 07/08/2026 | 07/08/2026 | [Amazon CloudFront](https://aws.amazon.com/cloudfront/) |
+| 5 | - Review and test all existing functions integrated into the project | 07/09/2026 | 07/09/2026 | |
+| 6 | - Compile data flows into a text file to support drawing the project's architecture diagram | 07/10/2026 | 07/10/2026 | |
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* The minigame level generation function was finalized and successfully integrated into the main application flow.
+* Successfully set up a schedule (cron job) on EventBridge, enabling the shop to automatically refresh its item list accurately every week.
+* Mastered CloudFront's caching and content delivery mechanisms, fully prepared to optimize the loading speed of static resources (images, assets).
+* Through comprehensive E2E testing (QA), the system proved stable; all functions are tightly linked, and no critical errors were detected.
+* Completed a detailed text description of the architecture flows (API Gateway, Lambda, DynamoDB, S3, etc.), establishing a solid foundation for designing the official Architecture Diagram for the final report.

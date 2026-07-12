@@ -32,7 +32,7 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Week 9:** [Resolving AWS issues, finalizing Gacha and currency conversion systems](1.9-week9/)
 
-**Week 10:** [To be updated...](1.10-week10/)
+**Tuần 10:** [EventBridge Shop Reset, QA dự án, CloudFront và tài liệu hóa kiến trúc](1.10-week10/)
 
 **Week 11:** [To be updated...](1.11-week11/)
 
