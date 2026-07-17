@@ -1,5 +1,5 @@
 ---
-title: "Uchimi StudyGamification"
+title: "Workshop"
 date: 2026-07-17
 weight: 5
 chapter: true

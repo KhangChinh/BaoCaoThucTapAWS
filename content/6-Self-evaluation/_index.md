@@ -1,39 +1,30 @@
 ---
 title: "Self-Assessment"
-date: 2024-01-01
+date: 2026-07-30
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **AMAZON WEB SERVICES VIETNAM COMPANY LIMITED** from **05/05/2026** to **30/07/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+I participated in the project **Uchimi StudyGamification: Creating learning habits through AI and Gamification ecosystem**, through which I improved my skills in **programming, team management, problem-solving, and report writing**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 
 To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Professional knowledge & skills** | Applying technological knowledge to the AI & Gamification project | ✅ | ☐ | ☐ |
+| 2 | **Ability to learn** | Speed of absorbing new technologies, processes, and services | ✅ | ☐ | ☐ |
+| 3 | **Proactiveness and responsibility** | Proactively researching solutions, taking on tasks, and adhering to the schedule | ✅ | ☐ | ☐ |
+| 4 | **Discipline** | Adhering to working hours, regulations, and general workflows | ☐ | ✅ | ☐ |
+| 5 | **Communication and teamwork** | Coordinating, exchanging ideas, and working collaboratively with colleagues | ☐ | ✅ | ☐ |
+| 6 | **Problem-solving skills** | Identifying bugs, analyzing, and proposing solutions | ✅ | ☐ | ☐ |
+| 7 | **Overall contribution** | Performance and value brought to the entire Uchimi project | ✅ | ☐ | ☐ |
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* **Expertise and meticulousness:** Need to shorten the time spent researching new services and be more thorough during work to minimize basic errors.
+* **Time allocation and management skills:** Need to properly assess the capabilities of each team member to assign tasks more suitably. Improve the ability to estimate task completion time and manage the team's deadlines to avoid delaying the overall progress of the project.
+* **Report writing skills:** Practice presentation skills, documentation, and writing project progress reports more clearly, concisely, and professionally.
