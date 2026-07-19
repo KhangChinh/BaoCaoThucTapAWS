@@ -1,59 +1,32 @@
 ---
 title: "Worklog Tuần 11"
-date: 2024-01-01
-weight: 2
+date: 2026-07-13
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tối ưu hóa tốc độ tải tài nguyên tĩnh bằng cách định tuyến Client qua mạng phân phối nội dung (CDN) AWS CloudFront.
+* Trực quan hóa toàn bộ hệ thống bằng sơ đồ kiến trúc (Architecture Diagram) chuẩn mực.
+* Đóng gói (build) ứng dụng thành tệp thực thi (.exe) và triển khai lên môi trường Production.
+* Thực hiện kiểm thử trực tiếp trên Production để đảm bảo sản phẩm vận hành hoàn hảo trước khi nghiệm thu.
+* Chuẩn bị kịch bản demo và đề cương chi tiết cho báo cáo tổng kết dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Thay đổi cấu hình để Client gọi đến AWS CloudFront thay vì gọi trực tiếp vào S3 | 13/07/2026 | 13/07/2026 | [Amazon CloudFront](https://aws.amazon.com/cloudfront/) |
+| 3 | - Vẽ và hoàn thiện sơ đồ kiến trúc dự án | 14/07/2026 | 14/07/2026 | |
+| 4 | - Nén/build dự án thành file .exe để deploy <br> - Tải và kiểm tra các chức năng trên môi trường production | 15/07/2026 | 15/07/2026 | |
+| 5 | - Lên kịch bản và chuẩn bị nội dung để quay video demo cho dự án | 16/07/2026 | 16/07/2026 | |
+| 6 | - Tổng hợp số liệu và chuẩn bị nội dung để viết báo cáo dự án | 17/07/2026 | 17/07/2026 | |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Đã cấu hình thành công CloudFront Distribution, giúp Client tải tệp tĩnh nhanh và bảo mật hơn rất nhiều so với truy cập trực tiếp S3.
+* Sơ đồ kiến trúc hệ thống được vẽ chi tiết, thể hiện rõ ràng luồng tương tác giữa các dịch vụ AWS (API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront...).
+* Dự án được đóng gói thành công dưới dạng file `.exe`. Quá trình deploy lên Production diễn ra suôn sẻ.
+* Qua quá trình kiểm tra thực tế (User Acceptance Testing) trên Production, tất cả các tính năng cốt lõi đều hoạt động ổn định, không phát sinh lỗi.
+* Đã hoàn thiện kịch bản chi tiết cho video demo và lập xong dàn ý đầy đủ cho tài liệu báo cáo cuối khóa.
