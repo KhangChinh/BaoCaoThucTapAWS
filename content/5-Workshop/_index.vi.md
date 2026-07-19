@@ -18,13 +18,6 @@ Một trong những thách thức lớn nhất của quá trình tự học khô
 
 Hệ thống kết hợp các phiên học tập tập trung, chuỗi nhiệm vụ hằng ngày, cơ chế phần thưởng tức thời cùng trợ lý AI để tạo động lực liên tục cho người dùng. Những cơ chế này giúp củng cố vòng lặp **Hành động → Phản hồi → Phần thưởng**, từ đó góp phần hình thành thói quen học tập một cách tự nhiên và bền vững.
 
-Bên cạnh việc cải thiện trải nghiệm người dùng, dự án còn tập trung giải quyết nhiều bài toán kỹ thuật quan trọng trong quá trình xây dựng một ứng dụng Desktop kết hợp Cloud, bao gồm:
-
-- Đồng bộ dữ liệu theo mô hình **Offline-First**.
-- Đảm bảo tính nhất quán dữ liệu thông qua các giao dịch **ACID** và xử lý **Race Condition**.
-- Xây dựng cơ chế **Anti-cheat Stateless** nhằm hạn chế gian lận mà không phụ thuộc vào trạng thái phiên làm việc.
-- Tích hợp **Edge AI** để hỗ trợ các tính năng AI ngay trên thiết bị người dùng, giảm độ trễ và tăng khả năng hoạt động ngoại tuyến.
-
 ## Mục lục kiến trúc
 
 1. [Bối cảnh, Mục tiêu và Bài toán kỹ thuật](5.1-Overview/)
