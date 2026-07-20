@@ -24,20 +24,16 @@ Based on practical testing and operations, the project currently has a few limit
 
 In addition to overcoming current limitations, the project aims to expand into a comprehensive EdTech (Education Technology) ecosystem through the following upgrades:
 
-#### 1. Platform Expansion
-*   **Mobile App Development:** Port and expand the application to mobile platforms (iOS/Android) via React Native. This will allow users to easily track their progress, receive Push Notifications for daily quests, and maintain their learning habits anytime, anywhere.
-*   **Cross-device Cloud Sync:** Optimize APIs to ensure a seamless transition between Desktop and Mobile. Learning data, authentication tokens (AWS Cognito), and inventory items will be synchronized in real-time, regardless of the device being used.
-
-#### 2. AI Upgrades
+#### 1. AI Upgrades
 *   **Multimodal AI:** Upgrade the AI Assistant's capabilities to not only understand plain text but also recognize images, solve complex mathematical formulas, or extract content from lecture videos for user summarization.
 *   **Personalized Learning Paths:** Apply Machine Learning to analyze users' focus time charts, enabling the AI to recommend the most effective study timeframes (Golden hours) for each individual.
 *   **Voice Chat AI:** Integrate Speech-to-Text and Text-to-Speech technologies, turning the AI into a companion that supports practical foreign language communication practice directly within the app.
 
-#### 3. Deepening the Gamification Ecosystem
+#### 2. Deepening the Gamification Ecosystem
 *   **Minigame Expansion:** Add highly educational puzzle games such as Crosswords, Sudoku, or interactive Flashcards. These levels will be logically designed to reuse the existing automated level generation module.
 *   **Virtual Pet System:** Enhance the Gacha system to unlock "Pet Assistants". Pets will appear as overlays on the Focus Session screen, displaying happy/sad emotional states based on the user's habit maintenance progress (Streak), creating a deeper emotional connection.
 
-#### 4. Social & Ed-Management
+#### 3. Social & Ed-Management
 *   **Multiplayer Co-Study Rooms:** Allow users to create shared study rooms in real-time. Friends can turn on cameras/microphones and share a Pomodoro timer to increase peer pressure, helping each other progress. Room search functionality will be optimized by Algolia.
 *   **Classroom Management System:** Expand the customer base to a B2B/B2C model by allowing Teachers or Tutors to create private "Study Rooms/Classrooms":
     *   Teachers will have the authority to manage the student roster, track detailed focus time charts (`strikeCount`, `rankScore`), and monitor the distraction levels of each individual.

@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # Uchimi StudyGamification: Kiến tạo thói quen học tập thông qua AI và hệ sinh thái Gamification
 
-Chào mừng bạn đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và nền tảng **AWS Serverless** ở phía Server, hướng đến mục tiêu tối ưu hóa chi phí vận hành nhưng vẫn mang lại trải nghiệm học tập tuyệt vời, giúp quá trình tự học không còn gò bó hay mang tính ép buộc.
+Chào mừng anh/ chị đã đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và nền tảng **AWS Serverless** ở phía Server, hướng đến mục tiêu tối ưu hóa chi phí vận hành nhưng vẫn mang lại trải nghiệm học tập tuyệt vời, giúp quá trình tự học không còn gò bó hay mang tính ép buộc.
 
 ## Tổng quan
 

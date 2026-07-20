@@ -24,20 +24,16 @@ Dựa trên quá trình kiểm thử và vận hành thực tế, dự án hiệ
 
 Bên cạnh việc khắc phục hạn chế, dự án định hướng mở rộng thành một hệ sinh thái EdTech (Giáo dục & Công nghệ) thông qua các nâng cấp sau:
 
-#### 1. Mở rộng nền tảng (Platform Expansion)
-*   **Phát triển Mobile App:** Chuyển đổi và mở rộng ứng dụng lên các nền tảng di động (iOS/Android) thông qua React Native. Điều này giúp người dùng dễ dàng theo dõi tiến độ, nhận thông báo (Push Notifications) về nhiệm vụ hàng ngày và duy trì thói quen học tập mọi lúc, mọi nơi.
-*   **Đồng bộ Cloud đa thiết bị:** Tối ưu hóa API để trải nghiệm chuyển đổi giữa Desktop và Mobile diễn ra liền mạch. Dữ liệu học tập, token đăng nhập (AWS Cognito) và kho vật phẩm sẽ được đồng bộ theo thời gian thực bất kể người dùng đang sử dụng thiết bị nào.
-
-#### 2. Nâng cấp Trí tuệ Nhân tạo (AI)
+#### 1. Nâng cấp Trí tuệ Nhân tạo (AI)
 *   **Xử lý Đa phương tiện (Multimodal AI):** Nâng cấp khả năng của Trợ lý AI để không chỉ đọc hiểu văn bản thuần túy mà còn nhận diện hình ảnh, giải nghĩa công thức toán học phức tạp, hoặc trích xuất nội dung từ video bài giảng để tóm tắt cho người dùng.
 *   **Cá nhân hóa lộ trình học:** Ứng dụng Machine Learning để phân tích biểu đồ thời gian tập trung của người dùng, từ đó AI có thể đưa ra lời khuyên về khung giờ học hiệu quả nhất (Golden hours) cho từng cá nhân.
 *   **Voice Chat AI:** Tích hợp công nghệ nhận diện và tổng hợp giọng nói (Speech-to-Text / Text-to-Speech), biến AI thành một người bạn đồng hành hỗ trợ luyện tập giao tiếp ngoại ngữ thực tế ngay trong ứng dụng.
 
-#### 3. Đào sâu Hệ sinh thái Gamification
+#### 2. Đào sâu Hệ sinh thái Gamification
 *   **Mở rộng Kho Minigame:** Bổ sung thêm các trò chơi tư duy mang tính giáo dục cao như giải đố từ vựng (Crossword), Sudoku, hoặc Flashcard tương tác. Các màn chơi sẽ được thiết kế logic để tái sử dụng module tạo màn chơi tự động hiện có.
 *   **Hệ thống Thú cưng ảo (Virtual Pet):** Cải tiến vòng quay Gacha để mở khóa các "Trợ lý Thú cưng". Thú cưng sẽ xuất hiện trên màn hình Focus Session dưới dạng overlay, có trạng thái vui/buồn dựa trên tiến độ duy trì thói quen (Streak) của người dùng, tạo thêm sự gắn kết sâu sắc về mặt cảm xúc.
 
-#### 4. Tương tác Xã hội & Quản lý Giáo dục (Social & Ed-Management)
+#### 3. Tương tác Xã hội & Quản lý Giáo dục (Social & Ed-Management)
 *   **Phòng học ảo đa người dùng (Co-Study Room):** Cho phép người dùng tạo các phòng học chung theo thời gian thực. Bạn bè có thể cùng bật camera/mic, chia sẻ bộ đếm giờ Pomodoro để tăng tính giám sát ngang hàng (Peer pressure), giúp nhau cùng tiến bộ. Tính năng tìm kiếm phòng học sẽ được tối ưu bởi Algolia.
 *   **Hệ thống Quản lý Học viên (Classroom Management):** Mở rộng tệp khách hàng sang mô hình B2B/B2C bằng cách cho phép Giáo viên hoặc Gia sư tạo "Phòng học/Lớp học" riêng:
     *   Giáo viên có quyền quản lý danh sách học viên, theo dõi chi tiết biểu đồ thời gian tập trung (`strikeCount`, `rankScore`), và mức độ xao nhãng của từng cá nhân.
