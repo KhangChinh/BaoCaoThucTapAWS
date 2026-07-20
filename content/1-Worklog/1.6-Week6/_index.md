@@ -7,26 +7,26 @@ pre: " <b> 1.6. </b> "
 ---
 ### Week 6 Objectives:
 
-* Standardize and document the complete operational and business flows of the system.
-* Enhance application security by optimizing the management of user login tokens.
-* Research background and automated task execution solutions on the server using AWS EventBridge.
-* Refactor the database schema to effectively reduce unnecessary API calls from the Client to AWS.
-* Design a tailored session management logic for two core sub-modules: Learning and Minigame.
+* Standardize and clarify the entire business logic flow of the system.
+* Enhance app security by optimizing login token management.
+* Research solutions for automating background tasks on the server using the AWS EventBridge service.
+* Separate and optimize the database structure (DB schema) to minimize unnecessary API calls from the Client to AWS.
+* Design an optimal session management solution (session logic) for the two core modules: Learning and Minigame.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be done this week:
+| Day | Task | Start Date | End Date | Resources |
 | --- | --- | --- | --- | --- |
-| 2 | - Map out and finalize the documentation for all project business flows | 06/08/2026 | 06/08/2026 | |
-| 3 | - Implement logic for managing and storing user login tokens | 06/09/2026 | 06/09/2026 | |
-| 4 | - Learn about AWS EventBridge for managing background functions on the server | 06/10/2026 | 06/10/2026 | [AWS EventBridge Documentation](https://aws.amazon.com/eventbridge/) |
-| 5 | - Refactor the database schema to minimize client-side API calls to AWS | 06/11/2026 | 06/11/2026 | |
-| 6 | - Research and design session logic for the learning & minigame features | 06/12/2026 | 06/12/2026 | |
+| Monday | - Design and complete the documentation for all project business flows | 08/06/2026 | 08/06/2026 | |
+| Tuesday | - Build the logic to manage and store user login tokens | 09/06/2026 | 09/06/2026 | |
+| Wednesday | - Learn about the AWS EventBridge service to manage background functions on the server | 10/06/2026 | 10/06/2026 | [AWS EventBridge Documentation](https://aws.amazon.com/eventbridge/) |
+| Thursday | - Refine and adjust the database schema to reduce the Client's API calls to AWS | 11/06/2026 | 11/06/2026 | |
+| Friday | - Research and design session logic for the learning and minigame parts of the app | 12/06/2026 | 12/06/2026 | |
 
 
-### Week 6 Achievements:
+### Week 6 Results:
 
-* Successfully finalized the overall system workflow and business logic documentation, providing a solid blueprint for subsequent development stages.
-* The token handling logic is now robust, secure, and preserves valid user authentication states seamlessly.
-* Grasped the core concepts of AWS EventBridge (Event Bus, Rules, Targets) and established a strategy for setting up scheduled background cron jobs.
-* Optimized the database schema efficiently, yielding a visible reduction in redundant API queries from the front-end, saving compute resources and costs.
-* Designed a viable session state model for the learning and minigame features, ensuring real-time and precise tracking of user progress.
+* Completed the overall diagram and documented all project business flows, helping to provide a clear implementation direction for the next stages.
+* The token processing system works safely, ensuring good access control and maintaining a valid login state for users.
+* Mastered the operating mechanism of AWS EventBridge (Event Bus, Rules, Targets) and came up with a plan to deploy periodic tasks (cron jobs) running in the background on the Serverless architecture.
+* The database schema was successfully improved thanks to reasonable data clustering techniques, significantly reducing the frequency of API calls from the Client, saving AWS resources and costs.
+* Completed the session processing model for the learning and minigame parts, ensuring that the user's playing/learning progress data is always stored accurately and instantly.

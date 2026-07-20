@@ -8,11 +8,11 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Ly Khang Chinh
 
-&emsp; **Phone Number:** 0919097895 
+&emsp; **Phone Number:** 0919097895
 
 &emsp; **Email:** khangchinh28803@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education - HUTECH
+&emsp; **University:** Ho Chi Minh City University of Technology - HUTECH
 
 &emsp; **Major:** Information Technology
 
@@ -20,15 +20,15 @@ chapter: false
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** From 05/05/2026 to 30/07/2026
 
-![Your profile picture](https://res.cloudinary.com/dqblg6ont/image/upload/v1778399184/avatar_uyogic.jpg)
+![Profile Picture](https://res.cloudinary.com/dqblg6ont/image/upload/v1778399184/avatar_uyogic.jpg)
 
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
+3.  [Posted Blogs](3-BlogsPosted/)
 4.  [Events Participated](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)

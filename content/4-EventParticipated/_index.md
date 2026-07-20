@@ -1,27 +1,27 @@
 ---
-title: "Participated Events"
+title: "Events Participated"
 date: 2026-07-30
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
-During my internship, I participated in 2 events. Each event was a memorable experience providing new and useful knowledge, along with wonderful gifts and great moments.
+During my internship, I participated in 2 events. Each event was a memorable experience with useful new knowledge, along with gifts and great moments.
 
 ### [Event 1](4.1-Event1/)
 &emsp;**Event Name:** FCAJ Community Day
 
-&emsp;**Time:** 09:00 on May 09, 2026
+&emsp;**Time:** 09:00 on 09/05/2026
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, No. 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+&emsp;**Location:** 26th Floor, Bitexco Building, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
-&emsp;**Role:** Attendee
+&emsp;**Role:** Attendee 
 
 ### [Event 2](4.2-Event2/)
 &emsp;**Event Name:** FCAJ Community Day
 
-&emsp;**Time:** 09:00 on May 23, 2026
+&emsp;**Time:** 09:00 on 23/05/2026
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, No. 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+&emsp;**Location:** 26th Floor, Bitexco Building, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
 &emsp;**Role:** Attendee

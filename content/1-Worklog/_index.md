@@ -6,34 +6,34 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Welcome to my Worklog. This page is dedicated to recording and tracking my overall progress, learning journey, and practical experience throughout the First Cloud AI Journey program.
+Welcome to my Worklog. This page is used to record and track my overall work progress, learning process, and practical experience during my participation in the First Cloud AI Journey.
 
-I expect to complete the program in approximately **12 weeks**.
+The program is expected to be completed in about **12 weeks**.
 
-Throughout these working weeks, my journey will progress from grasping basic regulations, getting familiar with the AWS cloud computing platform, and building a team, to brainstorming and directly deploying a real-world project.
+Throughout these working weeks, my roadmap will go from understanding the basic rules, getting familiar with the AWS cloud platform, and building a team, to brainstorming ideas and directly implementing a real project.
 
-Below is the detailed breakdown of my weekly tasks:
+Below are the work details for each week:
 
-**Week 1:** [Understanding regulations, creating an AWS account, and team building](1.1-week1/)
+**Week 1:** [Learn the rules, create an AWS account, and build a team](1.1-week1/)
 
-**Week 2:** [Team syncing, learning AWS Cognito, and React integration](1.2-week2/)
+**Week 2:** [Sync with the team, learn AWS Cognito, and integrate it into React](1.2-week2/)
 
-**Week 3:** [Project initialization, UI/Use case finalization, and Cognito UserPool setup](1.3-week3/)
+**Week 3:** [Initialize the project, finalize UI/Use cases, and configure Cognito UserPool](1.3-week3/)
 
-**Week 4:** [Perfecting authentication, learning Serverless, and planning backend migration](1.4-week4/)
+**Week 4:** [Complete authentication, learn about Serverless, and plan to move the backend to AWS](1.4-week4/)
 
-**Week 5:** [DB optimization, migrating logic to AWS Serverless, and learning AWS S3](1.5-week5/)
+**Week 5:** [Optimize DB, move logic to AWS Serverless, and learn about AWS S3](1.5-week5/)
 
-**Week 6:** [Standardizing business flows, schema optimization, and learning AWS EventBridge](1.6-week6/)
+**Week 6:** [Standardize business flows, optimize database schema, and learn about AWS EventBridge](1.6-week6/)
 
-**Tuần 7:** [Tính năng kết bạn, S3/Lambda trigger, OpenSearch và CloudFormation](1.7-week7/)
+**Week 7:** [Friend system, S3/Lambda triggers, OpenSearch, and CloudFormation](1.7-week7/)
 
-**Week 8:** [AWS OpenSearch setup, data sync triggers, and team progress management](1.8-week8/)
+**Week 8:** [Configure AWS OpenSearch, trigger data sync, and manage team progress](1.8-week8/)
 
-**Week 9:** [Resolving AWS issues, finalizing Gacha and currency conversion systems](1.9-week9/)
+**Week 9:** [Resolve AWS issues, complete the Gacha system, and currency exchange](1.9-week9/)
 
-**Tuần 10:** [EventBridge Shop Reset, QA dự án, CloudFront và tài liệu hóa kiến trúc](1.10-week10/)
+**Week 10:** [EventBridge Shop Reset, Project QA, CloudFront, and Architecture documentation](1.10-week10/)
 
-**Week 11:** [CloudFront integration, Architecture Diagram, Production deployment, and report prep](1.11-week11/)
+**Week 11:** [Integrate CloudFront, draw architecture diagram, deploy to Production, and prepare report](1.11-week11/)
 
-**Week 12:** [Final testing, demo video, and project report completion](1.12-week12/)
+**Week 12:** [Complete testing, finish demo video, and project report](1.12-week12/)

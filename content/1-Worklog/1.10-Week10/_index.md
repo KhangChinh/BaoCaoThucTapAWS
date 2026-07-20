@@ -7,28 +7,28 @@ pre: " <b> 1.10. </b> "
 ---
 ### Week 10 Objectives:
 
-* Finalize the minigame module, ensuring the level generation feature runs smoothly.
-* Automate the in-game shop system using cron jobs on AWS EventBridge.
-* Re-evaluate the search infrastructure, cancel AWS OpenSearch, and migrate to Algolia to optimize performance.
-* Conduct End-to-End (E2E) testing across the entire system to ensure overall quality.
-* Research the AWS CloudFront content delivery network (CDN) to improve loading speeds and security.
-* Document system flows to serve as a crucial prerequisite for designing the Architecture Diagram.
+* Complete the minigame module, ensuring the level generation feature works smoothly.
+* Automate the shop system using a cron job on AWS EventBridge.
+* Re-evaluate the search infrastructure, decide to cancel AWS OpenSearch and switch to the Algolia platform to optimize performance.
+* Perform an overall system check (End-to-End Testing) to ensure quality.
+* Research the AWS CloudFront content delivery network (CDN) to increase page load speed and security.
+* Document the system flow, serving as an important premise for designing the Architecture Diagram.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be done this week:
+| Day | Task | Start Date | End Date | Resources |
 | --- | --- | --- | --- | --- |
-| 2 | - Support the team in finalizing the level generation function for the minigame | 07/06/2026 | 07/06/2026 | |
-| 3 | - Use AWS EventBridge to create a weekly reset function for the shop | 07/07/2026 | 07/07/2026 | [AWS EventBridge Scheduler](https://aws.amazon.com/eventbridge/scheduler/) |
-| 4 | - Cancel AWS OpenSearch service and switch to Algolia <br> - Learn about the CloudFront service for upcoming project integration | 07/08/2026 | 07/08/2026 | [Algolia](https://www.algolia.com/) <br> [Amazon CloudFront](https://aws.amazon.com/cloudfront/) |
-| 5 | - Review and test all existing functions integrated into the project | 07/09/2026 | 07/09/2026 | |
-| 6 | - Compile data flows into a text file to support drawing the project's architecture diagram | 07/10/2026 | 07/10/2026 | |
+| Monday | - Support the team in completing the level generation feature for the minigame | 06/07/2026 | 06/07/2026 | |
+| Tuesday | - Use AWS EventBridge to create a cron job to reset the shop weekly | 07/07/2026 | 07/07/2026 | [AWS EventBridge Scheduler](https://aws.amazon.com/eventbridge/scheduler/) |
+| Wednesday | - Cancel the AWS OpenSearch service, switch to Algolia <br> - Learn about the CloudFront service to prepare for integration into the project | 08/07/2026 | 08/07/2026 | [Algolia](https://www.algolia.com/) <br> [Amazon CloudFront](https://aws.amazon.com/cloudfront/) |
+| Thursday | - Check the overview of all existing functions in the project | 09/07/2026 | 09/07/2026 | |
+| Friday | - Synthesize data flows into a text file to support drawing the project architecture diagram | 10/07/2026 | 10/07/2026 | |
 
 
-### Week 10 Achievements:
+### Week 10 Results:
 
-* The minigame level generation function was finalized and successfully integrated into the main application flow.
-* Successfully set up a schedule (cron job) on EventBridge, enabling the shop to automatically refresh its item list accurately every week.
-* Successfully migrated the search system to Algolia, simplifying operational processes and improving query speed compared to OpenSearch.
-* Mastered CloudFront's caching and content delivery mechanisms, fully prepared to optimize the loading speed of static resources (images, assets).
-* Through comprehensive E2E testing (QA), the system proved stable; all functions are tightly linked, and no critical errors were detected.
-* Completed a detailed text description of the architecture flows (API Gateway, Lambda, DynamoDB, S3, etc.), establishing a solid foundation for designing the official Architecture Diagram for the final report.
+* The minigame level generation feature was completed and successfully integrated into the app's main flow.
+* Successfully set up the schedule (cron job) on EventBridge, helping the shop automatically refresh the item list every week accurately.
+* Successfully switched the search system to Algolia, helping to simplify the operation process and improve query speed compared to OpenSearch.
+* Mastered CloudFront's caching and content delivery mechanisms, getting ready to optimize the loading speed of static resources (images, assets).
+* Through the overall testing process (QA), the system operated stably, the functions were tightly linked, and no serious errors were detected.
+* Completed a detailed text description of the architecture flow (API Gateway, Lambda, DynamoDB, S3...), creating a solid foundation to draw the official Architecture diagram for the report.

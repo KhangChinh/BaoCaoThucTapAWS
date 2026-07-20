@@ -7,23 +7,23 @@ pre: " <b> 1.8. </b> "
 ---
 ### Week 8 Objectives:
 
-* Configure and finalize the server infrastructure for the AWS OpenSearch system.
-* Automate the data synchronization flow to index new users into the search system immediately upon successful registration.
-* Monitor, encourage, and manage the working progress of all team members.
-* Conduct cross-reviews and test modules implemented by other members to ensure system consistency and workflow alignment.
+* Configure and completely set up the server infrastructure for the AWS OpenSearch system.
+* Automate the new user data sync flow to the search system (indexing) right after successful registration.
+* Monitor, encourage, and manage the working progress of team members.
+* Perform cross-review and testing of modules done by other members to ensure system consistency.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be done this week:
+| Day | Task | Start Date | End Date | Resources |
 | --- | --- | --- | --- | --- |
-| 2 | - Set up the server and cluster for the AWS OpenSearch service | 06/22/2026 | 06/22/2026 | [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) |
-| 3 | - Write a trigger function to push searchable info to the search server upon account creation | 06/23/2026 | 06/23/2026 | |
-| 4 | - Manage the team's working progress and assist in resolving blockers | 06/24/2026 | 06/24/2026 | |
-| 5 | - Review and test functions implemented by other members to ensure they align with the project's operational flow | 06/25/2026 | 06/25/2026 | |
+| Monday | - Set up the server and cluster for the AWS OpenSearch service | 22/06/2026 | 22/06/2026 | [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html) |
+| Tuesday | - Write a trigger function to sync data to the search server when a user creates an account | 23/06/2026 | 23/06/2026 | |
+| Wednesday | - Manage work progress, help solve difficulties for other team members | 24/06/2026 | 24/06/2026 | |
+| Thursday | - Check the functions implemented by other members to ensure the correct operating flow of the project | 25/06/2026 | 25/06/2026 | |
 
 
-### Week 8 Achievements:
+### Week 8 Results:
 
 * Successfully configured the AWS OpenSearch environment, ensuring high-speed text query processing capabilities.
-* The trigger function (Lambda) operates stably: user information is automatically indexed to OpenSearch seamlessly upon account creation.
-* Effectively monitored and controlled the team's overall progress, ensuring that tasks are completed according to the committed timeline.
-* Through thorough review and testing, modules developed by other members were integrated smoothly without conflicts, strictly adhering to the project's core business flow.
+* The trigger function (Lambda) works stably: user information is automatically pushed (indexed) to OpenSearch right after they successfully create an account without significant delay.
+* Kept track of and well-controlled the team's progress, ensuring tasks were completed according to the committed timeline.
+* Through close review and testing, modules developed by other members were integrated smoothly, without causing conflicts, and strictly followed the project's core business flow.

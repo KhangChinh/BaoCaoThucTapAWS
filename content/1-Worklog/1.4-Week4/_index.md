@@ -7,23 +7,23 @@ pre: " <b> 1.4. </b> "
 ---
 ### Week 4 Objectives:
 
-* Enhance user experience with a seamless and secure authentication and authorization flow.
-* Grasp core knowledge of Serverless architecture on AWS through API Gateway and Lambda.
-* Research modern security paradigms by learning about zero-trust client systems.
-* Plan and prepare the necessary logic to migrate the backend to the AWS environment.
+* Complete the user experience with smooth and secure authentication and authorization flows.
+* Understand the core knowledge of Serverless architecture on AWS through API Gateway and Lambda.
+* Research modern security concepts with a zero-trust client system.
+* Plan and prepare the necessary logical steps to move the backend to the AWS environment.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be done this week:
+| Day | Task | Start Date | End Date | Resources |
 | --- | --- | --- | --- | --- |
-| 2 | - Adjust authorization and authentication <br> - Save user token and implement refresh login function when opening the app | 05/25/2026 | 05/25/2026 | |
-| 3 | - Learn about AWS API Gateway and AWS Lambda services | 05/26/2026 | 05/26/2026 | [AWS Lambda](https://aws.amazon.com/lambda/) <br> [API Gateway](https://aws.amazon.com/api-gateway/) |
-| 4 | - Learn what a zero-trust client system is | 05/27/2026 | 05/27/2026 | |
-| 5 | - List the logic required to migrate the backend to AWS | 05/28/2026 | 05/28/2026 | |
+| Monday | - Adjust authorization and authentication <br> - Save user tokens and create a login refresh feature every time the app is opened | 25/05/2026 | 25/05/2026 | |
+| Tuesday | - Learn about AWS API Gateway and AWS Lambda services | 26/05/2026 | 26/05/2026 | [AWS Lambda](https://aws.amazon.com/lambda/) <br> [API Gateway](https://aws.amazon.com/api-gateway/) |
+| Wednesday | - Understand what a zero-trust client system is | 27/05/2026 | 27/05/2026 | |
+| Thursday | - List the logic needed to move the backend to AWS | 28/05/2026 | 28/05/2026 | |
 
 
-### Week 4 Achievements:
+### Week 4 Results:
 
-* Perfected the authentication system: user tokens are securely stored, and the auto-refresh login feature works stably upon app launch.
-* Understood the operational mechanisms, benefits, and applications of AWS API Gateway and AWS Lambda.
-* Grasped the design philosophy of a zero-trust client system to enhance the project's security.
-* Compiled a detailed list of logic and data flows necessary as a prerequisite for migrating the backend to AWS.
+* Completed the authentication system: user tokens are safely stored, and the automatic login refresh feature works stably when opening the app.
+* Understood the operating mechanisms, benefits, and how to apply AWS API Gateway and AWS Lambda.
+* Clearly understood the design philosophy of a zero-trust client system to apply it to enhance security for the project.
+* Made a detailed list of the necessary logic and data flows as a foundation for moving the backend to AWS.

@@ -6,76 +6,76 @@ chapter: false
 pre: " <b> 5.1. </b> "
 ---
 
-# Project Context and System Design Challenges
+# Project Background and System Design Problems
 
-## Project context
+## Project Background
 
-One of the main difficulties in self-directed learning is not access to information, but sustaining attention and motivation long enough to achieve meaningful results. Learning usually produces delayed and less visible outcomes, whereas social media and entertainment applications provide immediate and frequent feedback. Learners may therefore understand the value of studying but still struggle to begin, maintain a routine, or recognize their progress.
+One of the biggest challenges in self-study is not accessing knowledge, but maintaining focus and motivation long enough to achieve meaningful results. Learning outcomes often appear slowly and are hard to see immediately, while social media or entertainment apps constantly provide instant feedback. Therefore, learners may clearly understand the benefits of studying but still struggle to start, keep up with a schedule, or notice their own progress.
 
-This behavior is related in part to the brain's reward-learning system. Dopamine should not be understood simply as a “pleasure chemical”; it also contributes to anticipation, learning from outcomes, and reinforcing actions that are perceived as valuable. When an action is followed by clear feedback—such as visible progress, an achievement, or a meaningful reward—the brain is more likely to associate that action with a positive outcome. Repeated feedback can support the behavioral loop:
+This phenomenon is partly related to the brain's reward-based learning system. Dopamine should not just be understood as a "feel-good chemical"; it also plays a role in forming expectations, learning from results, and reinforcing behaviors deemed valuable. When an action gets clear feedback, such as observable progress, an achievement, or a meaningful reward, the brain tends to link that action with a positive outcome. Appropriate and repeated feedback can help form a behavior loop:
 
 > **Action → Feedback → Reward → Motivation to repeat**
 
-Uchimi StudyGamification applies this principle through focus sessions, daily quests, progress indicators, achievements, rewards, minigames, and social interaction. These elements do not replace the value of knowledge or turn studying into reward collection. Instead, they reduce the psychological barrier to starting, make progress visible, and help users gradually move from external incentives toward intrinsic motivation and a sustainable learning habit.
+Uchimi StudyGamification applies this principle through focus sessions, daily tasks, progress indicators, achievements, rewards, minigames, and social interaction. These elements are not meant to replace the value of knowledge or turn learning into a reward-collecting activity. Instead, they help reduce the psychological barrier to getting started, make progress clear, and support users in gradually shifting from external motivation to internal motivation and a sustainable study habit.
 
-## Problem statement and objectives
+## Problem Statement and Project Goals
 
-Traditional learning tools often focus on content delivery and task management but provide limited support for long-term motivation. In contrast, a purely entertainment-oriented reward system may attract users without producing meaningful educational outcomes. Uchimi must therefore make learning engaging enough for voluntary participation while ensuring that its cloud-based gamification system remains fair, consistent, responsive, secure, scalable, and financially sustainable.
+Traditional learning tools often focus on providing content and managing tasks but do not fully support maintaining long-term motivation. In contrast, a purely entertainment-based reward system might attract users but does not create real learning outcomes. Therefore, Uchimi needs to make learning engaging enough for users to join voluntarily, while ensuring the cloud-based gamification system is always fair, consistent, responsive, secure, scalable, and cost-optimized.
 
-The project develops a desktop learning platform using **ReactJS and Electron on the client** and an **AWS Serverless backend**. Its central objective is to make learning a voluntary and repeatable activity by giving each study session a clear goal, timely feedback, and a sense of achievement. More specifically, the project aims to:
+The project builds a desktop learning app, combining **ReactJS and Electron on the client side** with **AWS Serverless architecture on the backend**. The core goal is to make learning a voluntary, easily repeatable activity by giving each study session a clear goal, timely feedback, and a sense of achievement. Specific goals include:
 
-- divide long-term learning goals into manageable daily actions;
-- visualize progress through focus time, streaks, quests, scores, and achievements;
-- use rewards and minigames as positive reinforcement after meaningful study activities;
-- support personalized planning and knowledge review with AI-assisted features;
-- provide fair social interaction through friends and leaderboards; and
-- deliver a responsive application whose infrastructure can scale while remaining cost-efficient.
+- breaking down long-term goals into small, actionable daily steps;
+- visualizing progress through focus time, study streaks, tasks, scores, and achievements;
+- using rewards and minigames as positive reinforcement after meaningful learning activities;
+- supporting personalized planning and knowledge review with AI-assisted features;
+- building a fair social interaction environment through friends and leaderboards; and
+- providing a highly responsive experience with a scalable yet cost-controlled infrastructure.
 
-The intention is not to force users to study more. It is to create conditions in which they are more willing to start, can observe their improvement, and choose to return regularly.
+The project does not aim to force users to study more. The system aims to create conditions so they are ready to start, can see their progress, and proactively return to study regularly.
 
-## Target users
+## Target Audience
 
-### School and university students
+### Students
 
-Students regularly need to absorb large amounts of knowledge, meet deadlines, and prepare for examinations. Their common challenges include distraction, procrastination, pressure, and difficulty measuring daily progress. Uchimi helps transform broad goals into focus sessions and daily quests, supports review through quizzes, and provides immediate feedback after each activity. Ranked study modes and progress statistics also offer clearer structure to users who need additional discipline.
+High school and college students often have to absorb a large amount of knowledge, complete assignments on time, and prepare for exams. Common struggles include loss of focus, procrastination, stress, and difficulty measuring daily progress. Uchimi helps turn general goals into focus sessions and daily tasks, supports reviewing with quizzes, and provides feedback right after each activity. Ranked study modes and progress statistics also create a clearer structure for users who need more discipline.
 
-### Working professionals
+### Working Professionals
 
-Working professionals often study to improve job-related skills, learn languages, prepare for certifications, or pursue personal interests. Their primary constraint is limited and fragmented time rather than a fixed academic schedule. Uchimi supports them through flexible planning, short learning sessions, progress synchronization, and AI-assisted study features, allowing continued learning without creating another burden after work.
+Working professionals often study to improve professional skills, learn foreign languages, prepare for certificates, or pursue personal hobbies. The main limitation for this group is having little and fragmented time, instead of a fixed schedule. Uchimi supports them with flexible planning, short study sessions, progress syncing, and AI-assisted learning features, thereby helping them maintain their studies without creating an extra burden after work.
 
-### Shared value
+### Shared Values for Both Groups
 
-Although their schedules and goals differ, both groups need support in starting tasks, maintaining consistency, and recognizing progress. Uchimi turns long-term objectives into manageable activities, records effort over time, and connects learning with appropriate feedback and recreation. Users retain ownership of their goals and choose a pace that fits their circumstances. This voluntary, user-centered approach is essential to sustainable habit formation rather than short-lived engagement.
+Despite having different schedules and goals, both groups need support to get started, stay consistent, and recognize their progress. Uchimi turns long-term goals into manageable activities, acknowledges effort over time, and connects learning with feedback as well as appropriate entertainment. Users are still in control of their goals and can choose a pace that fits their personal situation. A voluntary, user-centric approach is key to forming a lasting habit rather than just creating short-term interest.
 
-## Core technical challenges
+## Core Technical Problems
 
-### 1. Anti-cheat mechanisms for study activities
+### 1. Preventing Cheating in Learning Activities
 
-Study duration, completion status, rank points, quest progress, and rewards cannot be determined solely from client-submitted values because a desktop client can be modified and requests can be replayed. The server must remain authoritative over important rules. Each study session therefore requires an authenticated user, server-recorded timestamps, valid state transitions, controlled strike handling, and server-side outcome calculation. Duplicate, expired, out-of-order, or inconsistent requests must be rejected or handled safely. These controls protect not only rewards but also the credibility of streaks, ranked results, and leaderboards.
+Study time, completion status, ranking points, task progress, and rewards cannot be entirely decided by data sent from the client, because desktop apps can be modified and requests can be replayed. The server must be the decision-maker for important rules. Therefore, each study session needs to be linked to an authenticated user, recorded server time, valid state transitions, controlled strike mechanisms, and server-calculated results. Duplicate, expired, out-of-order, or invalid requests must be rejected or handled safely. This mechanism protects not only rewards but also the reliability of streaks, ranked results, and leaderboards.
 
-### 2. Anti-cheat mechanisms for minigames
+### 2. Preventing Cheating in Minigames
 
-Minigames have a different threat model: users may modify scores, submit known solutions, automate actions, manipulate time, or claim the same result repeatedly. Game configurations and solutions must be generated or verified by the server. Validation can combine solution correctness, server timestamps, reasonable completion duration, action patterns, session constraints, and one-time reward settlement. Suspicious results must not affect currency, quest progress, or leaderboards. The controls should preserve fairness without excessive client tracking that would increase latency and storage costs.
+Minigames have a different risk model than study sessions: users might alter scores, send known answers, automate actions, change the time, or claim a result multiple times. Game configurations and answers must be generated or verified by the server. Verification can combine answer accuracy, server-recorded time, reasonable completion windows, action patterns, session limits, and a one-time reward settlement mechanism. Suspicious results must not affect currency, task progress, or leaderboards. Checks must ensure fairness but without excessively tracking the client, which would increase latency and storage costs.
 
-### 3. Cloud data integrity and consistency
+### 3. Data Integrity and Consistency in the Cloud
 
-Learning progress, Knowledge Points, in-system currencies, inventory, rewards, Gacha history, and social relationships are connected data. A timeout or repeated request must not duplicate an item, grant a reward twice, or produce a negative balance. The system therefore uses server-authoritative rules, input validation, idempotent processing, DynamoDB conditional updates, atomic counters, and transactions for operations that must succeed or fail together. Audit-friendly histories are also necessary for important economic operations. These mechanisms are particularly relevant to purchases, currency conversion, quest claims, Gacha, and bidirectional friendship updates.
+Learning progress, Knowledge Points, in-system currency, item inventory, rewards, Gacha history, and friend relationships are all interconnected. A timed-out or re-sent request must not duplicate items, give double rewards, or cause negative balances. Thus, the system needs to use server-determined rules, input validation, idempotent processing, conditional updates, and atomic counters in DynamoDB, along with transactions for operations that must succeed or fail together. Important economic actions also require a traceable history. These mechanisms are especially necessary for purchasing items, currency exchange, claiming task rewards, Gacha, and updating two-way friend relationships.
 
-### 4. Efficient client–server synchronization
+### 4. Efficient Synchronization Between Client and Server
 
-The desktop application should display useful information immediately, even when the network is slow or temporarily unavailable. Continuously polling every API, however, would increase latency, bandwidth, Lambda invocations, and database reads. Uchimi therefore requires an offline-friendly strategy combining local cache hydration, version or timestamp-based change detection, aggregated synchronization endpoints, incremental updates, and expiration policies for data that can tolerate temporary staleness. Event-driven backend processing can propagate internal changes automatically. Conflict resolution must distinguish mergeable local data from authoritative data—such as balances, rewards, and ranked results—that must always be resolved by the server.
+The desktop app needs to display useful information right at startup, even if the network is slow or temporarily disconnected. However, having the client constantly call every API to check for new data will increase latency, network traffic, Lambda executions, and database reads. Uchimi needs an offline-friendly strategy, combining local caching, version or timestamp-based change detection, aggregated sync endpoints, incremental updates, and expiration policies for data that can tolerate delays. Event-driven processing in the backend helps automatically spread internal changes. The conflict resolution mechanism must distinguish between data that can be merged on the client and decisive data like balances, rewards, and ranking results—which must always rely on the server as the final source of truth.
 
-### 5. Cloud operating-cost optimization
+### 5. Optimizing Cloud Server Operational Costs
 
-User activity changes over time, so permanently provisioned infrastructure may waste resources during periods of low traffic. AWS Serverless services such as Lambda, API Gateway, DynamoDB, S3, and EventBridge can scale with demand and follow a pay-for-use model. Nevertheless, serverless is not automatically inexpensive. The system must reduce redundant API calls, batch compatible operations, cache stable master data, avoid unnecessary DynamoDB scans, design appropriate indexes, expire temporary records with TTL, and move non-urgent work to scheduled or asynchronous processing. API throttling, metrics, and cost alerts help protect the platform from inefficient workloads and request spikes.
+User activity levels change over time, so permanently allocated infrastructure can waste money during low-traffic periods. AWS Serverless services like Lambda, API Gateway, DynamoDB, S3, and EventBridge can scale on demand and charge based on usage. However, serverless does not always mean low cost. The system needs to reduce duplicate API calls, bundle compatible actions, cache rarely changing master data, avoid unnecessary DynamoDB scans, design appropriate indexes, automatically delete temporary records using TTL, and shift non-urgent tasks to scheduled or asynchronous processing. API rate limits, operational metrics, and cost alerts help protect the platform from inefficient processing loads or sudden traffic spikes.
 
-## Cross-cutting requirements
+## Cross-cutting Requirements
 
-- **Security:** Amazon Cognito authentication, JWT-protected APIs, validation of external input, and least-privilege IAM permissions.
-- **Observability:** structured logs, operational metrics, error monitoring, and cost alerts.
-- **Scalability and maintainability:** domain-based backend separation, infrastructure as code, and versioned client–server contracts.
-- **Privacy and responsible design:** collection of only necessary data and gamification mechanisms that support rather than displace learning goals.
+- **Security:** authenticate with Amazon Cognito, protect APIs with JWT, validate external data, and apply IAM permissions based on the principle of least privilege.
+- **Observability:** use structured logs, operational metrics, error tracking, and cost alerts.
+- **Scalability and Maintainability:** separate the backend by business domains, manage infrastructure as code, and control client-server communication versions.
+- **Privacy and Responsible Design:** only collect necessary data and ensure gamification always serves, rather than overshadows, the learning goals.
 
-## Expected contribution
+## Expected Project Value
 
-Uchimi demonstrates how behavioral design, AI-assisted learning, desktop technology, and cloud-native architecture can be combined in a practical educational system. For users, the platform supports voluntary participation, visible progress, and long-term habit formation. From an engineering perspective, it provides a case study in building a server-authoritative, data-consistent, offline-friendly, and cost-aware gamification platform on AWS.
+Uchimi illustrates the ability to combine behavioral design, AI-assisted learning, desktop app technology, and cloud-native architecture in a practical educational system. For users, the platform supports a voluntary mindset, visualizes progress, and builds long-term habits. Technically, the project is a case study on a gamification platform on AWS with the server as the reliable data source, ensuring consistency, offline-friendliness, and controlled operational costs.

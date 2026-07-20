@@ -7,22 +7,22 @@ pre: " <b> 1.3. </b> "
 ---
 ### Week 3 Objectives:
 
-* Set up the initial project foundation and finalize critical feature flows (use cases).
-* Outline and determine the list of necessary user interfaces (UI) for the application.
-* Bring the authentication system to life with AWS Cognito User Pool, including authorization and security configurations.
+* Set up the initial project foundation and finalize important feature flows (use cases).
+* Draft and define the list of necessary user interfaces (UI) for the app.
+* Put the authentication system into practical operation with AWS Cognito User Pool, including authorization and security.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be done this week:
+| Day | Task | Start Date | End Date | Resources |
 | --- | --- | --- | --- | --- |
-| 3 | - Initialize the project <br> - Meet and determine necessary interfaces | 05/19/2026 | 05/19/2026 | |
-| 4 | - Complete the core use cases of the project | 05/20/2026 | 05/20/2026 | |
-| 5 | - Create UserPool and integrate AWS Cognito into the project | 05/21/2026 | 05/21/2026 | [AWS Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) |
-| 6 | - Customize security parameters and user authorization | 05/22/2026 | 05/22/2026 | |
+| Tuesday | - Initialize the project <br> - Meet and define the necessary UIs | 19/05/2026 | 19/05/2026 | |
+| Wednesday | - Complete the core use cases of the project | 20/05/2026 | 20/05/2026 | |
+| Thursday | - Create a UserPool and apply AWS Cognito to the project | 21/05/2026 | 21/05/2026 | [AWS Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) |
+| Friday | - Customize security settings and user authorization | 22/05/2026 | 22/05/2026 | |
 
 
-### Week 3 Achievements:
+### Week 3 Results:
 
 * Successfully initialized the basic project structure.
-* Finalized the list of required interfaces and completed the documentation for core use cases, providing the team with a clear direction.
-* Successfully created a UserPool on AWS Cognito and seamlessly integrated it into the project.
-* Completed the configuration of security parameters and strict user authorization.
+* Finalized the list of necessary UIs and completed the documentation for the core use cases, giving the team a clear direction.
+* Successfully created a UserPool on AWS Cognito and smoothly integrated it into the project.
+* Completed the configuration of strict security and authorization settings for users.
