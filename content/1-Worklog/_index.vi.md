@@ -34,6 +34,6 @@ Dưới đây là chi tiết công việc của từng tuần:
 
 **Week 10:** [EventBridge Shop Reset, Project QA, CloudFront, and Architecture documentation](1.10-week10/)
 
-**Tuần 11:** [Đang cập nhật...](1.11-week11/)
+**Tuần 11:** [Tích hợp CloudFront, vẽ sơ đồ kiến trúc, deploy Production và chuẩn bị báo cáo](1.11-week11/)
 
-**Tuần 12:** [Đang cập nhật...](1.12-week12/)
+**Tuần 12:** [Hoàn tất kiểm thử, hoàn thành video demo và báo cáo dự án](1.12-week12/)

@@ -34,6 +34,6 @@ Below is the detailed breakdown of my weekly tasks:
 
 **Tuần 10:** [EventBridge Shop Reset, QA dự án, CloudFront và tài liệu hóa kiến trúc](1.10-week10/)
 
-**Week 11:** [To be updated...](1.11-week11/)
+**Week 11:** [CloudFront integration, Architecture Diagram, Production deployment, and report prep](1.11-week11/)
 
-**Week 12:** [To be updated...](1.12-week12/)
+**Week 12:** [Final testing, demo video, and project report completion](1.12-week12/)
