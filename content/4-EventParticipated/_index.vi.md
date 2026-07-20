@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập, tôi đã tham gia 2 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới bổ ích, cùng với đó là những món quà và những khoảnh khắc tuyệt vời.
+Trong quá trình thực tập, em đã tham gia 2 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới bổ ích, cùng với đó là những món quà và những khoảnh khắc tuyệt vời.
 
 ### [Event 1](4.1-Event1/)
 &emsp;**Tên sự kiện:** FCAJ Community Day

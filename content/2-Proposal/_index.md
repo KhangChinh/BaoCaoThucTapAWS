@@ -6,8 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Uchimi StudyGamification
-## Learning Application Combining AI and Gamification
+# Uchimi StudyGamification - Learning Application Combining AI and Gamification
+
 
 ### 1. Project Overview
 **Uchimi StudyGamification** is a desktop learning application (Desktop App) that combines AI technology with a Gamification ecosystem. The project is designed to transform the act of "turning on the computer to study every day" into a natural, voluntary, and sustainable habit. By applying the behavioral loop: **Discipline → Action → Feedback → Reward**, the system helps learners maintain high concentration while enjoying healthy entertainment after stressful study hours.

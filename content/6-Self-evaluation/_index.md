@@ -7,7 +7,7 @@ pre: " <b> 6. </b> "
 ---
 
 During my internship at **AMAZON WEB SERVICES VIETNAM COMPANY LIMITED** from **05/05/2026** to **30/07/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in the project **Uchimi StudyGamification: Creating learning habits through AI and Gamification ecosystem**, through which I improved my skills in **programming, team management, problem-solving, and report writing**.  
+I participated in the project **Uchimi StudyGamification - Learning Application Combining AI and Gamification**, through which I improved my skills in **programming, team management, problem-solving, and report writing**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 

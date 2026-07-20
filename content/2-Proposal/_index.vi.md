@@ -6,8 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Uchimi StudyGamification
-## Ứng dụng học tập kết hợp AI và Gamification
+# Uchimi StudyGamification - Ứng dụng học tập kết hợp AI và Gamification
+
 
 ### 1. Tổng quan dự án
 **Uchimi StudyGamification** là một ứng dụng học tập trên nền tảng máy tính (Desktop App) kết hợp công nghệ AI và hệ sinh thái Gamification. Dự án được thiết kế để biến hành động "mở máy tính lên học mỗi ngày" thành một thói quen tự nhiên, tự nguyện và bền vững. Thông qua việc ứng dụng vòng lặp hành vi: **Kỷ luật → Hành động → Phản hồi → Phần thưởng**, hệ thống giúp người học vừa duy trì sự tập trung cao độ, vừa được giải trí lành mạnh sau những giờ học căng thẳng.

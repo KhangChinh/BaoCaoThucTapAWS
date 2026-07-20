@@ -6,7 +6,8 @@ chapter: true
 pre: " <b> 5. </b> "
 ---
 
-# Uchimi StudyGamification: Forging Learning Habits through AI and a Gamification Ecosystem
+# Uchimi StudyGamification - Learning Application Combining AI and Gamification
+
 
 Welcome to the technical documentation of the **Uchimi StudyGamification** project. Built with a **ReactJS + Electron** architecture on the Client side and **AWS Serverless** on the Server side, the project aims to optimize operational costs while delivering an exceptional learning experience, transforming self-study from a forced obligation into an engaging journey.
 
