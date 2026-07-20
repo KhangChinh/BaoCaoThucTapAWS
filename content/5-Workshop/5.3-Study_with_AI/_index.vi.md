@@ -15,10 +15,10 @@ Dự án tích hợp AI vào hai chức năng cốt lõi: **AI Study Planner** (
 ## 1. Tổng quan (Overview)
 
 ### AI Study Planner
-Là trợ lý học tập cá nhân toàn diện tích hợp ngay trong ứng dụng. Người dùng có thể **upload tài liệu học tập** (PDF, DOCX, TXT), sau đó hội thoại tự nhiên với AI. AI đóng vai trò "cố vấn học thuật", chủ động thu thập thông tin về mục tiêu, khối lượng kiến thức và deadline, rồi tự động thiết kế một **lộ trình học tập chi tiết** (Study Plan) với từng Topic và thời lượng cụ thể. Từ lộ trình đó, AI sinh **bộ câu hỏi trắc nghiệm động (Quiz)** theo từng chủ đề để luyện Active Recall. Khi nộp bài, mỗi câu đúng cộng **Knowledge Points (KP)** và cập nhật tiến độ nhiệm vụ ngay lập tức trên server.
+AI Study Planner là trợ lý học tập cá nhân toàn diện được tích hợp ngay trong ứng dụng. Người dùng có thể **upload tài liệu học tập** (PDF, DOCX, TXT), sau đó hội thoại tự nhiên với AI. AI đóng vai trò "cố vấn học thuật", chủ động thu thập thông tin về mục tiêu, khối lượng kiến thức và deadline, rồi tự động thiết kế một **lộ trình học tập chi tiết** (Study Plan) với từng Topic và thời lượng cụ thể. Từ lộ trình đó, AI sinh **bộ câu hỏi trắc nghiệm động (Quiz)** theo từng chủ đề để luyện Active Recall. Khi nộp bài, mỗi câu đúng cộng **Knowledge Points (KP)** và cập nhật tiến độ nhiệm vụ ngay lập tức trên server.
 
 ### AIGuard — Hệ thống Giám sát Kỷ luật
-Là hệ thống phân tán hoạt động đồng thời trên Desktop App (Electron Backend) và Browser Extension (Chrome, Edge,...). Hệ thống **không chặn cứng video YouTube hay website**, mà dùng kiến trúc phân loại **3 tầng** để đánh giá ngữ cảnh từng nội dung. Ngoài ra, hệ thống còn tích hợp **AI App Blocker** để phát hiện và xử lý các ứng dụng giải trí đang chạy trên Windows (game, streaming, v.v.) thông qua cửa sổ cảnh báo đếm ngược 10 giây. AIGuard cũng tích hợp **Face Tracking với Liveness Detection** để chống AFK và chống gian lận bằng ảnh. Mọi vi phạm (Strike) được ghi nhận và xử lý hoàn toàn **server-side** qua AWS Lambda → DynamoDB, đảm bảo không thể giả mạo kết quả. Sau khi phiên học kết thúc, server tính điểm Rank và cập nhật tiến độ Quest — dữ liệu đẩy về client để đồng bộ Redux Store.
+AIGuard là hệ thống phân tán hoạt động đồng thời trên Desktop App (Electron Backend) và Browser Extension (Chrome, Edge,...). Hệ thống **không chặn cứng video YouTube hay website**, mà dùng kiến trúc phân loại **3 tầng** để đánh giá ngữ cảnh từng nội dung. Ngoài ra, hệ thống còn tích hợp **AI App Blocker** để phát hiện và xử lý các ứng dụng giải trí đang chạy trên Windows (game, streaming, v.v.) thông qua cửa sổ cảnh báo đếm ngược 10 giây. AIGuard cũng tích hợp **Face Tracking với Liveness Detection** để chống AFK và chống gian lận bằng ảnh. Mọi vi phạm (Strike) được ghi nhận và xử lý hoàn toàn **server-side** qua AWS Lambda → DynamoDB, đảm bảo không thể giả mạo kết quả. Sau khi phiên học kết thúc, server tính điểm Rank và cập nhật tiến độ Quest — dữ liệu đẩy về client để đồng bộ Redux Store.
 
 ---
 
@@ -60,7 +60,7 @@ Chuỗi văn bản thô được xử lý qua hàm `cleanText`:
 - Thu gọn nhiều khoảng trắng thành 1.
 
 **Bước 4 — Phân đoạn thứ bậc (Hierarchical Chunking — buildChunks):**
-Đây là tối ưu quan trọng nhất của pipeline tài liệu. Thay vì cắt văn bản theo kích thước cố định, hệ thống phát hiện **các tiêu đề (headings)** để tạo ra các chunk có ngữ nghĩa:
+Đây là tối ưu quan trọng nhất của luồng xử lý tài liệu. Thay vì cắt văn bản theo kích thước cố định, hệ thống phát hiện **các tiêu đề (headings)** để tạo ra các chunk có ngữ nghĩa:
 
 *Nhận diện heading bằng các mẫu (HEADING_PATTERNS):*
 - Dòng bắt đầu bằng "Chương/Chapter/Phần/Part/Bài/Lesson/Mục/Section + số".
@@ -237,7 +237,7 @@ Khi AI phán quyết **BLOCK**, Backend tạo một cửa sổ Electron nhỏ (`
 - Thanh đếm ngược 10 giây.
 - Nút **"Đóng ngay ứng dụng này"** — người dùng có thể chủ động đóng để thoát vi phạm.
 
-Cửa sổ overlay được tạo với `alwaysOnTop: true`, `focusable: false` (không cướp focus khỏi app đang chặn), `transparent: true` và hiển thị thông minh: nếu mini widget Focus Mode đang hiển thị, overlay tự động dịch chuyển lên phía trên để tránh đè nhau.
+Cửa sổ overlay được tạo với `alwaysOnTop: true`, `focusable: false` (không tranh chấp tiêu điểm - focus - của ứng dụng đang bị chặn), `transparent: true` và hiển thị thông minh: nếu mini widget Focus Mode đang hiển thị, overlay tự động dịch chuyển lên phía trên để tránh đè nhau.
 
 **Bước 7 — Xử lý kết quả 10 giây:**
 Trong suốt 10 giây, Backend kiểm tra mỗi 1 giây xem app có còn chạy không:
