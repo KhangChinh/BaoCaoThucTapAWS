@@ -8,26 +8,49 @@ pre: " <b> 5. </b> "
 
 # Uchimi StudyGamification: Kiến tạo thói quen học tập thông qua AI và hệ sinh thái Gamification
 
-Chào mừng bạn đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và **AWS Serverless** ở phía Server, hướng đến mục tiêu biến quá trình tự học thành một trải nghiệm học tập mang tính tương tác, duy trì động lực và tạo dựng thói quen lâu dài.
+Chào mừng bạn đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và nền tảng **AWS Serverless** ở phía Server, hướng đến mục tiêu tối ưu hóa chi phí vận hành nhưng vẫn mang lại trải nghiệm học tập tuyệt vời, giúp quá trình tự học không còn gò bó hay mang tính ép buộc.
 
 ## Tổng quan
 
-Một trong những thách thức lớn nhất của quá trình tự học không nằm ở việc tiếp cận kiến thức, mà ở khả năng **duy trì sự tập trung** và **xây dựng tính kỷ luật trong thời gian dài**. Người học rất dễ bị phân tâm hoặc mất động lực, khiến việc học bị gián đoạn và khó hình thành thói quen bền vững.
+Trong thời đại công nghệ số phát triển mạnh mẽ, thách thức lớn nhất của quá trình tự học không còn nằm ở việc khó tiếp cận kiến thức. Khó khăn thực sự nằm ở **khả năng duy trì sự tập trung lâu dài và tính kỷ luật** để việc học không bị gián đoạn. Người học rất dễ bị xao nhãng bởi vô vàn cám dỗ khi sử dụng máy tính, khiến việc hình thành một thói quen học tập bền vững trở nên vô cùng khó khăn.
 
-**Uchimi StudyGamification** được phát triển nhằm giải quyết vấn đề này bằng cách kết hợp giữa **Gamification**, **Trí tuệ nhân tạo (AI)** và các cơ chế hỗ trợ học tập hiện đại. Thay vì xem việc học là một nhiệm vụ mang tính bắt buộc, dự án hướng tới việc biến mỗi phiên học thành một trải nghiệm có mục tiêu, có phản hồi và có phần thưởng.
+**Uchimi StudyGamification** được ra đời nhằm giải quyết triệt để bài toán này. Mục tiêu cốt lõi của dự án là biến hành động "mở máy tính lên học mỗi ngày" thành một thói quen tự nhiên, bền vững và đầy hứng thú. 
 
-Hệ thống kết hợp các phiên học tập tập trung, chuỗi nhiệm vụ hằng ngày, cơ chế phần thưởng tức thời cùng trợ lý AI để tạo động lực liên tục cho người dùng. Những cơ chế này giúp củng cố vòng lặp **Hành động → Phản hồi → Phần thưởng**, từ đó góp phần hình thành thói quen học tập một cách tự nhiên và bền vững.
+Hệ thống mang đến một giải pháp toàn diện, là sự giao thoa hoàn hảo giữa **kỷ luật thép** và **giải trí lành mạnh**:
+*   **Học tập kỷ luật cùng AI:** Áp dụng công nghệ AI Scan để theo dõi (track) và ngăn chặn ngay lập tức các hành vi xao nhãng khi người dùng thao tác trên máy tính, giúp duy trì sự tập trung cao độ.
+*   **Hệ sinh thái giải trí (Minigame):** Sau những giờ học tập căng thẳng, người dùng sẽ được bước vào không gian thư giãn với các minigame thú vị. Sự kết hợp này biến những áp lực học hành thành phần thưởng xứng đáng, giúp tái tạo năng lượng hiệu quả.
+
+Bằng cách áp dụng vòng lặp **Kỷ luật → Hành động → Phản hồi → Phần thưởng**, dự án không chỉ giữ chân người dùng mà còn từng bước kiến tạo nên một phong cách học tập hoàn toàn mới.
 
 ## Mục lục kiến trúc
 
-1. [Bối cảnh, Mục tiêu và Bài toán kỹ thuật](5.1-Overview/)
-2. [Kiến trúc hệ thống](5.2-Architecture/)
-3. [Học tập cùng AI](5.3-Study_with_AI/)
-4. [Gamification](5.4-Gamification/)
-5. [Triển khai và Vận hành](5.5-Deployment/)
-6. [Định hướng phát triển](5.6-Direction/)
+Tài liệu này sẽ đi sâu vào việc phân tích và hướng dẫn chi tiết các khía cạnh kỹ thuật của dự án, bao gồm:
+
+1. **[Bối cảnh dự án](5.1-Overview/)**
+   * Phân tích bối cảnh ra đời, mục tiêu cốt lõi và đối tượng người dùng hướng đến.
+   * Chi tiết bài toán kỹ thuật cần giải quyết để đáp ứng nhu cầu thực tiễn.
+2. **[Kiến trúc dự án](5.2-Architecture/)**
+   * Phân tích lý do lựa chọn kiến trúc AWS Serverless và rào cản kỹ thuật.
+   * Cách thiết lập phân quyền, rào chắn bảo mật và tích hợp các dịch vụ bên thứ 3.
+   * Chi tiết các dịch vụ AWS được sử dụng, cách xây dựng và hình ảnh Sơ đồ kiến trúc tổng thể [drawio].
+3. **[Học tập cùng với AI](5.3-Study_with_AI/)**
+   * Mô tả chi tiết quy trình hoạt động của trợ lý AI và công nghệ AI Scan.
+   * Cách AI xử lý dữ liệu, lợi ích của các model/extension được sử dụng và lý do phương pháp này mang lại hiệu quả cao.
+   * Hướng dẫn quy trình setup từng loại AI, các chế độ học tập và hệ thống nhiệm vụ.
+4. **[Hệ sinh thái game](5.4-Gamification/)**
+   * Phân tích luồng chuyển tiếp mượt mà từ phân hệ Học tập sang Minigame.
+   * Mô tả chung về cơ chế hoạt động của các minigame và các chức năng cốt lõi.
+   * Hệ thống xếp hạng (Leaderboard) giúp tăng tính cạnh tranh và giữ chân người dùng.
+5. **[Triển khai và Vận hành](5.5-Deployment/)**
+   * Hướng dẫn chi tiết quy trình triển khai ứng dụng (cách đóng gói bản build, cách tải về và cài đặt).
+   * Mô tả luồng thao tác thực tế và cách người dùng sử dụng hệ thống.
+6. **[Định hướng và phát triển](5.6-Direction/)**
+   * Nhìn nhận, đánh giá các điểm còn hạn chế cần cải thiện.
+   * Lộ trình phát triển và các chức năng dự kiến sẽ được tích hợp trong tương lai.
+
+---
 
 ## Mã nguồn
 
-- **Frontend:** https://github.com/KhangChinh/AWSStudy-Play
-- **Backend:** https://github.com/KhangChinh/AWSServerless
+- **Frontend (ReactJS + Electron):** https://github.com/KhangChinh/AWSStudy-Play
+- **Backend (AWS Serverless):** https://github.com/KhangChinh/AWSServerless
