@@ -17,6 +17,8 @@ During my internship, I participated in 2 events. Each event was a memorable exp
 
 &emsp;**Role:** Attendee 
 
+(Event 1 is missing because it was my first time attending, so I didn't think to record it for the report)
+
 ### [Event 2](4.2-Event2/)
 &emsp;**Event Name:** FCAJ Community Day
 
