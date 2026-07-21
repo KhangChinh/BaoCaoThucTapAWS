@@ -27,6 +27,6 @@ pre: " <b> 1.11. </b> "
 
 * Đã cấu hình thành công CloudFront Distribution, giúp Client tải tệp tĩnh nhanh và bảo mật hơn rất nhiều so với truy cập trực tiếp S3.
 * Sơ đồ kiến trúc hệ thống được vẽ chi tiết, thể hiện rõ ràng luồng tương tác giữa các dịch vụ AWS (API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront...).
-* Dự án được đóng gói thành công dưới dạng file `.exe`. Quá trình deploy lên Production diễn ra suôn sẻ.
+* Dự án được đóng gói thành công dưới dạng file **.exe**. Quá trình deploy lên Production diễn ra suôn sẻ.
 * Qua quá trình kiểm tra thực tế (User Acceptance Testing) trên Production, tất cả các tính năng cốt lõi đều hoạt động ổn định, không phát sinh lỗi.
 * Đã hoàn thiện kịch bản chi tiết cho video demo và lập xong dàn ý đầy đủ cho tài liệu báo cáo cuối khóa.

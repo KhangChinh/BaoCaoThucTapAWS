@@ -8,7 +8,7 @@ pre : " <b> 5.2. </b> "
 
 # System Architecture Analysis and Design
 
-After defining the product problem in section 5.1, the architecture design phase focuses on one question: *how can a Desktop app deliver a smooth experience while still ensuring data integrity and anti-cheat controls on the Server?* The project follows a **distributed Client–Server** model: the Frontend runs locally on the user’s machine (ReactJS + Electron), and the Backend runs fully on **AWS Serverless** in region `ap-southeast-1`.
+After defining the product problem in section 5.1, the architecture design phase focuses on one question: *how can a Desktop app deliver a smooth experience while still ensuring data integrity and anti-cheat controls on the Server?* The project follows a **distributed Client–Server** model: the Frontend runs locally on the user’s machine (ReactJS + Electron), and the Backend runs fully on **AWS Serverless** in region **ap-southeast-1**.
 
 #### Choosing Client–Server: ReactJS/Electron and AWS Serverless
 
@@ -18,7 +18,7 @@ After defining the product problem in section 5.1, the architecture design phase
 
 * **Scale-to-Zero:** When there are no users, the system incurs almost no fixed idle cost — suitable for development and workshop demos.
 * **Automatic scaling:** Lambda and API Gateway scale with load without manually configuring Auto Scaling Groups or Load Balancers.
-* **Infrastructure as Code:** The full stack is declared in `serverless.yml`; one `serverless deploy` lets CloudFormation provision Lambda, API, IAM, and Logs together.
+* **Infrastructure as Code:** The full stack is declared in **serverless.yml**; one **serverless deploy** lets CloudFormation provision Lambda, API, IAM, and Logs together.
 * **Built-in integrations:** Cognito, DynamoDB, S3, EventBridge, and Streams reduce platform setup time compared with self-managed servers.
 
 #### Architecture limitations and trade-offs
@@ -34,7 +34,7 @@ Alongside the benefits, this model introduces technical challenges that must be 
 
 #### Overall architecture diagram
 
-The diagram below shows the main communication paths among the Client, AWS services, and third-party systems. Inside **AWS Cloud — `ap-southeast-1`** there are four groups: AUTH & SECURITY, API & COMPUTE, DATA, and ASYNC; **CloudFront** serves images from S3. Outside the main account box are **ACCOUNT B — BEDROCK** (cross-account via STS) and the **EXTERNAL** block (Algolia, Gemini).
+The diagram below shows the main communication paths among the Client, AWS services, and third-party systems. Inside **AWS Cloud — ap-southeast-1** there are four groups: AUTH & SECURITY, API & COMPUTE, DATA, and ASYNC; **CloudFront** serves images from S3. Outside the main account box are **ACCOUNT B — BEDROCK** (cross-account via STS) and the **EXTERNAL** block (Algolia, Gemini).
 
 ![AWS architecture diagram](https://res.cloudinary.com/dqblg6ont/image/upload/v1784555384/Uchimi_StudyGamification-Uchimi_Architecture.drawio_nn9xhr.png)
 
@@ -44,7 +44,7 @@ Main flows on the diagram (numbered 1–10):
 3. **Invoke:** The HTTP API invokes **Lambda (36 fn)** to run business logic.
 4. **R/W:** Lambda reads/writes **DynamoDB + Streams**.
 5. **Assets:** Lambda reads/writes **S3 Assets** (uploads, avatars, public assets, etc.).
-6. **Index:** DynamoDB changes (via Streams) are pushed to **Algolia** to keep the search index in sync (implemented through the `streamIndexer` Lambda).
+6. **Index:** DynamoDB changes (via Streams) are pushed to **Algolia** to keep the search index in sync (implemented through the **streamIndexer** Lambda).
 7. **Cron:** **EventBridge (cron ×2)** triggers Lambda workers on a schedule (Shop / Leaderboard); CloudWatch sits in the same ASYNC group for monitoring.
 8. **AI Bedrock:** The Client calls **Amazon Bedrock** in **ACCOUNT B** using **STS from the app** (cross-account), bypassing the main account’s API Gateway.
 9. **Gemini:** The Client calls the **Google Gemini API** directly (EXTERNAL block) when the user configures an API Key.
@@ -70,10 +70,10 @@ The project uses Serverless Framework (Node.js 20.x) to provision infrastructure
 | **Amazon EventBridge** | Scheduled jobs (ASYNC — cron ×2) | Leaderboard refresh every 10 minutes; weekly Shop rotation (Sunday 17:00 UTC). |
 | **Amazon CloudWatch** | Monitoring and logs (ASYNC) | Auto-created Log Groups per Lambda; supports debugging and performance tracking. |
 | **Amazon Bedrock** | AI models via a secondary account | Lives in **ACCOUNT B — BEDROCK**; the Client assumes a role with **STS from the app** (step 8), not through main-account Lambdas. |
-| **AWS IAM** | Access control | Execution Role attached to Lambda (dashed line on the diagram); least-privilege statements in `serverless.yml`. |
+| **AWS IAM** | Access control | Execution Role attached to Lambda (dashed line on the diagram); least-privilege statements in serverless.yml. |
 | **AWS CloudFormation** | Infrastructure provisioning (via Serverless) | All resources in one Stack; rollback/cleanup in a single operation. |
 
-> **Note on Region/AZ:** The system does not use VPC or EC2, so Availability Zones are not configured manually. AWS manages multi-AZ for managed services (Lambda, DynamoDB, S3) inside region `ap-southeast-1`.
+> **Note on Region/AZ:** The system does not use VPC or EC2, so Availability Zones are not configured manually. AWS manages multi-AZ for managed services (Lambda, DynamoDB, S3) inside region ap-southeast-1.
 
 #### AI and third-party integrations
 
@@ -103,7 +103,7 @@ The system runs four flow groups, matching the diagram:
 
 #### Security configuration and IAM permissions
 
-**Least Privilege** is applied strictly through `serverless.yml`. The Lambda Execution Role receives only the Actions it needs on the required Resources:
+**Least Privilege** is applied strictly through **serverless.yml**. The Lambda Execution Role receives only the Actions it needs on the required Resources:
 
 * **DynamoDB:** **GetItem**, **PutItem**, **UpdateItem**, **DeleteItem**, **Query**, **Scan**, **BatchGetItem**, **BatchWriteItem**, **TransactWriteItems** — limited to the 8 system tables and related GSIs.
 * **DynamoDB Streams:** **DescribeStream**, **GetRecords**, **GetShardIterator**, **ListStreams** — only on the User Table Stream ARN.
@@ -122,7 +122,7 @@ Sensitive environment variables (**ALGOLIA_WRITE_KEY**, **COGNITO_USER_POOL_ID**
 Bringing the Backend to AWS follows these steps:
 
 1. **Prepare base resources:** Create the Cognito User Pool, 8 DynamoDB tables (enable Streams on the User table), S3 bucket, and (optionally) a CloudFront distribution before deploying Lambdas.
-2. **Configure `.env`:** Fill in table names, bucket, Cognito IDs, Stream ARN, and Algolia credentials in **AWSServerless/.env**.
+2. **Configure .env file:** Fill in table names, bucket, Cognito IDs, Stream ARN, and Algolia credentials in **AWSServerless/.env**.
 3. **Declare IaC:** All Lambdas, API routes, IAM policies, and triggers are defined in **serverless.yml** and per-module **function.yml** files (user, shop, gacha, social, upload, etc.).
 4. **Deploy with one command:**
 
@@ -131,7 +131,7 @@ cd AWSServerless
 serverless deploy
 ```
 
-Serverless Framework compiles the code (esbuild bundle + minify), generates a CloudFormation template, and provisions resources in region `ap-southeast-1`.
+Serverless Framework compiles the code (esbuild bundle + minify), generates a CloudFormation template, and provisions resources in region **ap-southeast-1**.
 
 5. **Connect the Frontend:** Update **AWSStudy-Play/.env** so **VITE_API_URL**, **VITE_COGNITO_\***, and **VITE_S3_ASSETS_URL** point to the deployed endpoints.
 

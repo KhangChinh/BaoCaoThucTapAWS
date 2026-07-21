@@ -27,6 +27,6 @@ pre: " <b> 1.11. </b> "
 
 * Successfully configured CloudFront Distribution, helping the Client load static files much faster and more securely than accessing S3 directly.
 * The system architecture diagram was drawn in detail, clearly showing the interaction flow between AWS services (API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront...).
-* The project was successfully packaged as an `.exe` file. The deployment process to Production went smoothly.
+* The project was successfully packaged as an **.exe** file. The deployment process to Production went smoothly.
 * Through actual testing (User Acceptance Testing) on Production, all core features operated stably without errors.
 * Completed the detailed script for the demo video and created a full outline for the final report document.

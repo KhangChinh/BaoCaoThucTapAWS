@@ -30,7 +30,7 @@ The project aims to build a learning ecosystem that balances **learning discipli
 The project uses a **distributed Client-Server** model, combining the convenience of a Desktop app with the flexible scalability of the Cloud.
 
 *   **Client (Frontend):** Built with ReactJS and packaged with Electron into a standalone Desktop app. State management and local caching (Local Caching) use Redux and Electron-store for fast responsiveness.
-*   **AI & Tracking:** Uses a Browser Extension (AIGuard) to communicate via WebSocket with the Desktop App. Integrates Google Gemini (Cloud AI) or Ollama (Local AI) for study support features.
+*   **AI & Tracking:** Uses a Browser Extension (AIGuard) to communicate via WebSocket with the Desktop App. Integrates AWS Bedrock (STS cross-account), Google Gemini (Cloud AI), or Ollama (Local AI) for content classification and study support features.
 *   **Backend (AWS Serverless):** All Business Logic (Gacha, Shop, Quest, Social) is handled via AWS Lambda and API Gateway in the **ap-southeast-1** region. 
 *   **Storage & Data:** Amazon DynamoDB stores system data (using **TransactWriteItems** to ensure integrity). Amazon S3 stores static resources (assets, avatars), and CloudFront serves as the CDN.
 *   **Ancillary Services:** Amazon Cognito (Authentication/JWT), EventBridge (Cronjobs for leaderboards/shops), DynamoDB Streams, and Algolia (User search).
@@ -45,7 +45,7 @@ The project uses a **distributed Client-Server** model, combining the convenienc
 ### 6. Budget and Cost Optimization
 The architecture is designed around **Cost-optimization** thinking:
 *   **Scale-to-Zero:** The use of AWS Lambda and API Gateway helps the system incur almost no fixed server costs when there are no active users.
-*   **Flexible AI options:** Users can configure their own API Key (Gemini) or run a free Local LLM (Ollama), saving the platform from bearing centralized LLM costs.
+*   **Flexible AI options:** Users can utilize AWS Bedrock, configure their own API Key (Gemini), or run a Local LLM (Ollama) directly on their machine to protect personal data privacy and save Cloud API token costs, optimizing operational costs for the platform.
 *   **Database operation optimization:** Applying internal caching on the Client and a bulk sync mechanism (**POST /sync-all**) to reduce API calls and read/write operations on DynamoDB.
 
 ### 7. Risk Assessment and Mitigation

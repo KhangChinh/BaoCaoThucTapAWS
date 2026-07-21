@@ -35,11 +35,10 @@ Dự án sử dụng kiến trúc kết hợp: **Vite + React** cho Frontend và
 
 Do dự án ưu tiên tính tiện dụng và triển khai nhanh chóng, quá trình phân phối ứng dụng Desktop được thực hiện thông qua dịch vụ lưu trữ đám mây:
 
-1. **Lưu trữ:** File `.exe` sau khi build thành công sẽ được upload lên **Google Drive**.
-2. **Chia sẻ:** Đường link tải trực tiếp từ Google Drive được cung cấp cho người dùng.
-3. **Tiện ích:** Dung lượng file đã được nén tối ưu, giúp quá trình tải xuống nhanh chóng kể cả với mạng phổ thông. Người dùng không cần tài khoản đặc biệt để tải về.
+1. **Lưu trữ:** File **.exe** sau khi build thành công sẽ được upload lên **Google Drive**.
+2. **Chia sẻ link:** Đặt quyền truy cập phù hợp và gắn link vào trang tài liệu hoặc gửi cho giảng viên/người hướng dẫn.
 
-*Lưu ý:* Đối với thành phần **Browser Extension (AIGuard)**, nhà phát triển nén thư mục Extension thành file `.zip` và gửi kèm link tải hoặc tải trực tiếp lên Chrome Web Store (nếu được phát hành public).
+*Lưu ý:* Đối với thành phần **Browser Extension (AIGuard)**, nhà phát triển nén thư mục Extension thành file **.zip** và gửi kèm link tải hoặc tải trực tiếp lên Chrome Web Store (nếu được phát hành public).
 
 ---
 
