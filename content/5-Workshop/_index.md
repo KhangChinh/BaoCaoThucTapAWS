@@ -10,6 +10,11 @@ pre: " <b> 5. </b> "
 
 Welcome to the technical documentation for the **Uchimi StudyGamification** project. The project is built with a **ReactJS + Electron** architecture on the Client side and an **AWS Serverless** platform on the Server side, aiming to optimize operational costs while delivering an excellent learning experience, making self-study no longer feel restrictive or forced.
 
+* **Project Demo Video:** [Watch Demo Video](https://youtube.com/placeholder)
+* **Frontend Source Code:** [GitHub Repository - AWSStudy-Play](https://github.com/KhangChinh/AWSStudy-Play)
+* **Backend Source Code:** [GitHub Repository - AWSServerless](https://github.com/KhangChinh/AWSServerless)
+* **Download Desktop App (.exe):** [Download Setup (.exe)](https://drive.google.com/file/d/1Qkdv_nLrQWICSZFCWqytDioq4r35Vyz4/view?usp=sharing)
+
 ## Overview
 
 In an era of rapid digital development, the biggest challenge of self-study is no longer the difficulty of accessing knowledge. The real difficulty lies in the **ability to maintain long-term focus and discipline** so that learning is not interrupted. Learners are easily distracted by countless temptations when using computers, making it extremely difficult to build a sustainable study habit.
