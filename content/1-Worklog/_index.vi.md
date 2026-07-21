@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Chào mừng bạn đến với Nhật ký công việc (Worklog) của em. Trang này được dùng để ghi chép và theo dõi toàn bộ tiến độ công việc, quá trình học tập cũng như trải nghiệm thực tế của em trong suốt quá trình tham gia First Cloud AI Journey.
+Chào mừng anh/ chị đã đến với Nhật ký công việc (Worklog) của em. Trang này được dùng để ghi chép và theo dõi toàn bộ tiến độ công việc, quá trình học tập cũng như trải nghiệm thực tế của em trong suốt quá trình tham gia First Cloud AI Journey.
 
 Chương trình dự kiến sẽ được em hoàn thành trong khoảng **12 tuần**.
 
