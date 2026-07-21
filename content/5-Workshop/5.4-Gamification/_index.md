@@ -22,38 +22,38 @@ Technologically, the system is built entirely on a Serverless Cloud-native archi
 ### Step 1: Prepare the AWS DynamoDB database
 
 Create the database table on AWS DynamoDB via Console or AWS CLI:
-- Create a DynamoDB table with the name defined in the `MINIGAME_TABLE` environment variable.
-- Configure the Primary Key including Partition Key (`PK`) and Sort Key (`SK`) following a Single-Table Design NoSQL model to optimize queries for Sudoku, Minesweeper, and the Leaderboard.
+- Create a DynamoDB table with the name defined in the MINIGAME_TABLE environment variable.
+- Configure the Primary Key including Partition Key (PK) and Sort Key (SK) following a Single-Table Design NoSQL model to optimize queries for Sudoku, Minesweeper, and the Leaderboard.
 
 ![Minigame table on DynamoDB](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651615/minigame_table_hrjnzo.png)
 
 ### Step 2: Prepare level data for each minigame
 
-- Create lists of game levels as JSON files, then upload them to Amazon S3 following the designated directory structure to populate the `MINIGAME_TABLE`.
+- Create lists of game levels as JSON files, then upload them to Amazon S3 following the designated directory structure to populate the MINIGAME_TABLE.
 
 ![Level data uploaded to S3](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651630/S3_item_ygzgfq.png)
 
 ### Step 3: Configure the Backend Lambda Service
 
-- Build API functions to handle game logic, anti-cheat mechanisms, and reward calculations for each minigame (`minesweeperService.mjs`, `sudokuService.mjs`, `minigameService.mjs`).
+- Build API functions to handle game logic, anti-cheat mechanisms, and reward calculations for each minigame (minesweeperService.mjs, sudokuService.mjs, minigameService.mjs).
 
 ![Game logic processing files and an example of a Lambda function](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651630/S3_item_ygzgfq.png)
 
-- Configure all environment variables on Lambda, including `MINIGAME_TABLE`, `USER_TABLE`, and `GAME_SECRET_KEY`.
+- Configure all environment variables on Lambda, including MINIGAME_TABLE, USER_TABLE, and GAME_SECRET_KEY.
 
 ![Environment variables](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651652/env_zrewsm.png)
 
 ### Step 4: Set up a recurring Worker to update the Leaderboard with EventBridge
 
-- Create an EventBridge Rule with a recurring schedule running every 10 minutes: `rate(10 minutes)`.
-- Point the Rule target directly to the Lambda function handling the leaderboard logic (`handleLeaderboardWorker`).
+- Create an EventBridge Rule with a recurring schedule running every 10 minutes: rate(10 minutes).
+- Point the Rule target directly to the Lambda function handling the leaderboard logic (handleLeaderboardWorker).
 
 ![Lambda function to load the leaderboard](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651673/leaderboard_erwqsb.png)
 
 ### Step 5: Launch the Client Frontend (Electron & Redux)
 
-- Launch the Electron application integrated with the Redux Store (`minigameReducer.js`, `minigameLogsReducer.js`).
-- Configure API services (`minigameService.js`, `minesweeperService.js`, `sudokuService.js`) to connect to API Gateway.
+- Launch the Electron application integrated with the Redux Store (minigameReducer.js, minigameLogsReducer.js).
+- Configure API services (minigameService.js, minesweeperService.js, sudokuService.js) to connect to API Gateway.
 
 ![Minigame hub interface running on the client](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651685/minigameClient_z2ytes.png)
 
@@ -70,15 +70,15 @@ The workflow of the Minigame system is designed as a closed Client-Server loop, 
 #### Flow 1: Initialization and data synchronization at Minigame Hub
 
 - The user accesses the Minigame Hub section and selects their desired game (Sudoku or Minesweeper).
-- The system synchronizes the list of levels via corresponding services (`handleSyncSudokuLevels` or `handleSyncMinesweeperLevels`). The application checks local cache for instant display, while sending a request through API Gateway to AWS Lambda to fetch the latest level list from DynamoDB if needed.
+- The system synchronizes the list of levels via corresponding services (handleSyncSudokuLevels or handleSyncMinesweeperLevels). The application checks local cache for instant display, while sending a request through API Gateway to AWS Lambda to fetch the latest level list from DynamoDB if needed.
 
 ![Level list interface running on the client](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651698/level_list_nj0un8.png)
 
 #### Flow 2: Starting a match and managing stamina resources
 
-- When a user selects a level, the client performs a preliminary check on unlock conditions and current stamina (Sanity) compared to the required cost (`sanityCost`).
-- A POST request (`handleStartSudokuSession` / `handleStartMinesweeperSession`) is sent to the server to initiate the session.
-- The Lambda function directly deducts stamina from the user's profile, initializes the game board matrix (`solutionGrid` and `puzzleGrid`), and writes a new session record with a PENDING status into DynamoDB.
+- When a user selects a level, the client performs a preliminary check on unlock conditions and current stamina (Sanity) compared to the required cost (sanityCost).
+- A POST request (handleStartSudokuSession / handleStartMinesweeperSession) is sent to the server to initiate the session.
+- The Lambda function directly deducts stamina from the user's profile, initializes the game board matrix (solutionGrid and puzzleGrid), and writes a new session record with a PENDING status into DynamoDB.
 
 ![Interface after starting a Sudoku session](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651725/open_level_vutzqf.png)
 
@@ -86,17 +86,17 @@ The workflow of the Minigame system is designed as a closed Client-Server loop, 
 
 #### Flow 3: Real-time interaction and security mechanics
 
-During the puzzle-solving process, moves (filling numbers in Sudoku or revealing cells/placing flags in Minesweeper) are recorded into action log arrays (`actionLogs`) temporarily stored in Redux.
+During the puzzle-solving process, moves (filling numbers in Sudoku or revealing cells/placing flags in Minesweeper) are recorded into action log arrays (actionLogs) temporarily stored in Redux.
 
 The system applies security and verification mechanisms:
-- **For Sudoku:** When the user requests a move validation (`handleCheckSudokuStep`), the server runs a verification algorithm (`checkSudokuCheat`) to prevent time manipulation, rapid automated bot clicks, or board tampering.
-- **For Minesweeper:** Each cell reveal operation (`handleRevealApi`) sends a state-encoded token. The server decrypts it in memory to check if a mine is triggered to end the game, or executes the empty space spread algorithm (`runFloodFill`) and returns a new token for the next move.
+- **For Sudoku:** When the user requests a move validation (handleCheckSudokuStep), the server runs a verification algorithm (checkSudokuCheat) to prevent time manipulation, rapid automated bot clicks, or board tampering.
+- **For Minesweeper:** Each cell reveal operation (handleRevealApi) sends a state-encoded token. The server decrypts it in memory to check if a mine is triggered to end the game, or executes the empty space spread algorithm (runFloodFill) and returns a new token for the next move.
 
 #### Flow 4: Match conclusion and reward processing
 
 The match concludes based on the player's actual performance:
-- **Winning Scenario (WIN):** When the player accurately completes the board and submits (`handleSubmitSudoku` / `handleSubmitMinesweeper`), the server performs final validation, calculates score based on time and difficulty, awards eCoin currency, updates personal records, and sets the session state to COMPLETED on DynamoDB.
-- **Losing or Quitting Scenario (LOST / QUIT):** If the player solves incorrectly, steps on a mine, or actively quits mid-game (`endState = 'quit'`), the system automatically refunds 50% of the initial stamina cost back to the user's wallet, and sets the session state to CANCELLED or UNCOMPLETED. This policy helps alleviate psychological pressure on the learner.
+- **Winning Scenario (WIN):** When the player accurately completes the board and submits (handleSubmitSudoku / handleSubmitMinesweeper), the server performs final validation, calculates score based on time and difficulty, awards eCoin currency, updates personal records, and sets the session state to COMPLETED on DynamoDB.
+- **Losing or Quitting Scenario (LOST / QUIT):** If the player solves incorrectly, steps on a mine, or actively quits mid-game (endState = 'quit'), the system automatically refunds 50% of the initial stamina cost back to the user's wallet, and sets the session state to CANCELLED or UNCOMPLETED. This policy helps alleviate psychological pressure on the learner.
 
 ![Interface after completing a level](https://res.cloudinary.com/lpwszzwp/image/upload/v1784651748/sudoku_win_ji9ram.png)
 
@@ -104,8 +104,8 @@ The match concludes based on the player's actual performance:
 
 #### Flow 5: Automated background leaderboard updates
 
-- Every 10 minutes, EventBridge triggers a Lambda Worker function (`handleLeaderboardWorker`).
-- The Worker scans the statistics table (`stats`) on DynamoDB, aggregates total scores across all players, and updates the Top 10 ranking list (`leaderboard`) complete with an expiration timestamp (`expiresAt`).
+- Every 10 minutes, EventBridge triggers a Lambda Worker function (handleLeaderboardWorker).
+- The Worker scans the statistics table (stats) on DynamoDB, aggregates total scores across all players, and updates the Top 10 ranking list (leaderboard) complete with an expiration timestamp (expiresAt).
 
 ---
 
