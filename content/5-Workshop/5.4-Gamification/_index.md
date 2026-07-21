@@ -45,7 +45,6 @@ The match concludes based on the player's actual results:
 **Flow 5: Automated Background Leaderboard Update (Background Worker)**
 *   Every 10 minutes, the AWS EventBridge router automatically triggers a Lambda Worker function (**handleLeaderboardWorker**).
 *   This Worker scans (Scan command) the statistics table (**stats**) on DynamoDB across all players, sorts them by total score, and generates a Top 10 ranking list (**leaderboard**) complete with an expiration time (**expiresAt**).
-*   **Architecture Optimization Note:** At the current scale, utilizing a Scan operation works perfectly fine. However, as the system scales to a massive user base, the architecture can easily be upgraded by implementing Global Secondary Indexes (GSI) or DynamoDB Streams to save Read Capacity Units (RCU) costs.
 
 ## 3. FUNCTIONAL VALUE ANALYSIS FOR AN EDUCATIONAL APP
 

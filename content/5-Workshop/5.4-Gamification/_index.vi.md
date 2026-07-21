@@ -45,7 +45,6 @@ Ván đấu kết thúc dựa trên kết quả thực tế của người chơi
 **Luồng 5: Cập nhật Xếp hạng tự động ngầm (Background Worker)**
 *   Cứ mỗi 10 phút, bộ định tuyến AWS EventBridge tự động kích hoạt một hàm Lambda Worker (**handleLeaderboardWorker**).
 *   Worker này sẽ quét (Scan) bảng dữ liệu thống kê (**stats**) trên DynamoDB của tất cả người chơi, sắp xếp theo tổng điểm để tạo ra bảng xếp hạng Top 10 (**leaderboard**) kèm theo thời gian hết hạn (**expiresAt**).
-*   **Lưu ý tối ưu kiến trúc:** Ở quy mô hiện tại, việc dùng lệnh Scan hoàn toàn đáp ứng tốt. Tuy nhiên, khi hệ thống mở rộng số lượng lớn người dùng, kiến trúc có thể dễ dàng nâng cấp bằng cách sử dụng Global Secondary Index (GSI) hoặc DynamoDB Streams để tiết kiệm chi phí RCU (Read Capacity Units).
 
 ## 3. PHÂN TÍCH GIÁ TRỊ CHỨC NĂNG ĐỐI VỚI MỘT ỨNG DỤNG HỌC TẬP
 
