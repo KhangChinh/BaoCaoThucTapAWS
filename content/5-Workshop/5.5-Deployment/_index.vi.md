@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.5. </b> "
 ---
 
-# Triển khai và Vận hành
-
 Quá trình triển khai dự án được thiết kế theo hướng tối giản hóa quy trình cài đặt cho người dùng cuối (end-user). Thay vì yêu cầu người dùng phải thiết lập môi trường phức tạp (Node.js, npm, Python,...), toàn bộ hệ thống Client (bao gồm Giao diện React và Lõi xử lý ngầm) được đóng gói thành một file thực thi duy nhất (Standalone Executable) hoạt động độc lập trên hệ điều hành Windows.
 
 ---

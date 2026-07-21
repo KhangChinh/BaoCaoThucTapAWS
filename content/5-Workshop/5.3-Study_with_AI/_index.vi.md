@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-# Học tập cùng AI
-
 Dự án tích hợp AI vào hai chức năng cốt lõi: **AI Study Planner** (lập kế hoạch và ôn tập thông minh) và **AIGuard** (hệ thống giám sát kỷ luật học tập thời gian thực). Cả hai tạo thành một vòng lặp khép kín: AI giúp người dùng học *hiệu quả hơn*, AIGuard đảm bảo người dùng *thực sự học*, còn hệ thống nhiệm vụ (Quest) và bảng xếp hạng (Rank) biến kỷ luật đó thành **phần thưởng có giá trị thực**.
 
 ---

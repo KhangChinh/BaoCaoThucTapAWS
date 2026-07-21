@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-# Hướng phát triển tương lai
-
 Với kiến trúc Serverless linh hoạt trên nền tảng AWS và ứng dụng Client sử dụng ReactJS + Electron, dự án đã xây dựng được một nền tảng cốt lõi vững chắc. Tuy nhiên, để hệ thống thực sự trở thành một hệ sinh thái học tập toàn diện, nhóm phát triển đã nhìn nhận rõ các điểm cần cải thiện cũng như vạch ra lộ trình mở rộng chiến lược trong tương lai.
 
 ### 5.6.1. Các điểm cần cải thiện của dự án

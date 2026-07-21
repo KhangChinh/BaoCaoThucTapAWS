@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-# Future Development Directions
-
 With a flexible Serverless architecture on AWS and a Client application using ReactJS + Electron, the project has established a solid core foundation. However, for the system to truly become a comprehensive educational ecosystem, the development team has identified areas requiring improvement and mapped out a strategic expansion roadmap for the future.
 
 ### 5.6.1. Areas for Improvement

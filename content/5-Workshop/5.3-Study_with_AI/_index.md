@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-# Study with AI
-
 The project integrates AI into two core functions: **AI Study Planner** (smart planning and review) and **AIGuard** (real-time study discipline monitoring system). Both create a closed loop: AI helps users learn *more efficiently*, AIGuard ensures users *actually study*, and the task system (Quest) and leaderboard (Rank) turn that discipline into **real valuable rewards**.
 
 ---

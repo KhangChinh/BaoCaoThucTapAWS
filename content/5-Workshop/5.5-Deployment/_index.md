@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.5. </b> "
 ---
 
-# Deployment and Operations
-
 The deployment and operational process plays a decisive role in delivering the product to users quickly, stably, and easily. For this Desktop application, the deployment process has been optimized to provide the smoothest installation experience possible.
 
 ## 1. Deployment and Packaging Process
