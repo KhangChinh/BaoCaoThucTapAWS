@@ -8,7 +8,7 @@ pre : " <b> 5.4. </b> "
 
 # Xây dựng Hệ sinh thái Gamification đa lớp
 
-Hệ thống Gamification của Uchimi không chỉ là các điểm số vô tri, mà là sự kết hợp chặt chẽ giữa logic Serverless phức tạp và các nguyên lý tâm lý học hành vi nhằm duy trì động lực học tập dài hạn cho người dùng.
+Hệ thống Gamification của dự án không chỉ dừng lại ở các điểm số thông thường, mà là sự kết hợp chặt chẽ giữa logic Serverless và các nguyên lý tâm lý học hành vi nhằm duy trì động lực học tập dài hạn cho người dùng.
 
 #### 1. Dòng chảy tiền tệ nội bộ: Sự trì hoãn thỏa mãn (Delayed Gratification)
 

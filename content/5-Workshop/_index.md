@@ -14,7 +14,7 @@ Welcome to the technical documentation for the **Uchimi StudyGamification** proj
 
 In an era of rapid digital development, the biggest challenge of self-study is no longer the difficulty of accessing knowledge. The real difficulty lies in the **ability to maintain long-term focus and discipline** so that learning is not interrupted. Learners are easily distracted by countless temptations when using computers, making it extremely difficult to build a sustainable study habit.
 
-**Uchimi StudyGamification** was created to completely solve this problem. The core goal of the project is to turn the act of "turning on the computer to study every day" into a natural, sustainable, and exciting habit.
+**The Uchimi StudyGamification project** was created to address this problem. The core goal of the project is to turn the act of "turning on the computer to study every day" into a natural, sustainable, and exciting habit.
 
 The system provides a comprehensive solution, representing the perfect intersection between **iron discipline** and **healthy entertainment**:
 *   **Disciplined AI Learning:** Applies AI Scan technology to track and instantly block distracting behaviors when users operate on their computers, helping to maintain deep focus.
