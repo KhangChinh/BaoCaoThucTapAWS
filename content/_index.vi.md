@@ -16,6 +16,8 @@ chapter: false
 
 &emsp; **Ngành:** Công nghệ thông tin
 
+&emsp; **Chuyên ngành:** Công nghệ phần mềm
+
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
